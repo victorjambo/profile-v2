@@ -24,9 +24,11 @@ module.exports = {
         },
         blue: {
           ...colors.blue,
-          navy: "#0a192f",
-          dark: {
-            navy: "#020c1b",
+          navy: {
+            DEFAULT: "#0a192f",
+            dark: "#020c1b",
+            light: "#112240",
+            lightest: "#233554",
           },
         },
         slate: {

@@ -8,7 +8,7 @@ const ContactSection: React.FC = () => {
       <div className="title font-sans font-semibold text-slate-lightest leading-[1.1] mb-[10px]">
         Get In Touch
       </div>
-      <p className="font-sans leading-snug text-xl text-slate mb-16">
+      <p className="font-sans text-slate mb-16">
         Although I&apos;m not currently looking for any new opportunities, my
         inbox is always open. Whether you have a question or just want to say
         hi, I&apos;ll try my best to get back to you!

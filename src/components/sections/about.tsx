@@ -26,13 +26,13 @@ const AboutSection: React.FC = () => {
           </p>
           <p>Here are a few technologies I’ve been working with recently:</p>
           <ul className="grid grid-cols-2 gap-1 font-mono">
-            <li className="tech relative pl-4">JavaScript</li>
-            <li className="tech relative pl-4">ReactJs</li>
-            <li className="tech relative pl-4">Node.js</li>
-            <li className="tech relative pl-4">Typescript</li>
-            <li className="tech relative pl-4">Solidity</li>
-            <li className="tech relative pl-4">NextJs</li>
-            <li className="tech relative pl-4">Python</li>
+            <li className="list">JavaScript</li>
+            <li className="list">ReactJs</li>
+            <li className="list">Node.js</li>
+            <li className="list">Typescript</li>
+            <li className="list">Solidity</li>
+            <li className="list">NextJs</li>
+            <li className="list">Python</li>
           </ul>
         </div>
         <div>
