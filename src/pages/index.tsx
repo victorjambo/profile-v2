@@ -3,8 +3,11 @@ import Head from "next/head";
 import { useTheme } from "next-themes";
 import Navbar from "@/components/navbar";
 import Side from "@/components/side";
-import AboutSection from "@/components/about";
-import HeroSection from "@/components/hero";
+import AboutSection from "@/components/sections/about";
+import HeroSection from "@/components/sections/hero";
+import { SectionHeader } from "@/components/sections";
+import Footer from "@/components/footer";
+import ContactSection from "@/components/sections/contact";
 
 const Home: NextPage = () => {
   const { theme } = useTheme();
@@ -26,16 +29,14 @@ const Home: NextPage = () => {
           <HeroSection />
           <AboutSection />
           <section id="experience" className="max-w-[700px] mx-auto py-[100px]">
-            <div className="section-header section-header-size flex items-end mt-[10px] mb-10 font-semibold leading-[1.1]">
-              <span className="section-header-size-2 mr-[10px] font-normal relative bottom-1 text-green">
-                02.
-              </span>
-              <span className="font-sans">Where I&apos;ve Worked</span>
-            </div>
+            <SectionHeader idx="02." title="Where I've Worked" />
           </section>
-          <section id="work">Work</section>
-          <section id="contact">Contact</section>
+          <section id="work" className="max-w-[1000px] mx-auto py-[100px]">
+            <SectionHeader idx="03." title="Some Things I've Built" />
+          </section>
+          <ContactSection />
         </main>
+        <Footer />
       </div>
     </div>
   );

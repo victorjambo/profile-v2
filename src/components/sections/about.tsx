@@ -1,12 +1,9 @@
+import { SectionHeader } from "@/components/sections";
+
 const AboutSection: React.FC = () => {
   return (
     <section id="about" className="max-w-[900px] mx-auto">
-      <div className="section-header section-header-size flex items-end mt-[10px] mb-10 font-semibold leading-[1.1]">
-        <span className="section-header-size-2 mr-[10px] font-normal relative bottom-1 text-green">
-          01.
-        </span>
-        <span className="font-sans">About me</span>
-      </div>
+      <SectionHeader idx="01." title="About me" />
       <div className="grid gap-[50px] grid-inner text-slate font-sans">
         <div className="space-y-3">
           <p>

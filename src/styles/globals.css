@@ -207,7 +207,7 @@
 }
 
 .section-header-size-2 {
-  font-size: clamp(16px,3vw,20px);
+  font-size: clamp(16px, 3vw, 20px);
 }
 
 .grid-inner {
@@ -215,11 +215,15 @@
 }
 
 .tech::before {
-  content: '▹';
+  content: "▹";
   position: absolute;
   left: 0;
   top: 5px;
-  color: #64FFDA;
+  color: #64ffda;
   font-size: 14px;
   line-height: 12px;
+}
+
+.title {
+  font-size: clamp(40px, 5vw, 60px);
 }

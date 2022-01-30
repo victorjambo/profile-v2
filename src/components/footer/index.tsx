@@ -1,0 +1,29 @@
+import { StarIcon } from "@heroicons/react/outline";
+
+const Footer: React.FC = () => {
+  return (
+    <footer className="flex flex-col h-auto min-h-[70px] p-4 text-center">
+      <div className="text-slate-light font-mono text-xs">
+        <a
+          href="https://github.com/victorjambo/profile-v4"
+          className="p-[10px]"
+        >
+          <div>Built by Victor Mutai</div>
+
+          <div className="mt-[10px]">
+            <span className="inline-flex items-center px-2">
+              <StarIcon className="h-3 w-3 inline-flex mr-1" />
+              <span>1,000</span>
+            </span>
+            <span className="inline-flex items-center px-2">
+              <StarIcon className="h-3 w-3 inline-flex" />
+              <span>1,000</span>
+            </span>
+          </div>
+        </a>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
