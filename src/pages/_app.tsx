@@ -8,7 +8,9 @@ const App = ({ Component, pageProps }: AppProps) => {
     <>
       <Header />
       <ThemeProvider defaultTheme="system" attribute="class">
-        <Component {...pageProps} />
+        <div className="bg-white dark:bg-slate-900 font-mono">
+          <Component {...pageProps} />
+        </div>
       </ThemeProvider>
     </>
   );

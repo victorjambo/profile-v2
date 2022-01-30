@@ -1,9 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { useTheme } from "next-themes";
+import Navbar from "@/components/navbar";
+import Side from "@/components/side";
+import AboutSection from "@/components/about";
+import HeroSection from "@/components/hero";
 
 const Home: NextPage = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <div>
@@ -13,34 +17,25 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={theme}>
-        <div className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white flex justify-center items-center text-3xl align-middle h-screen font-mono">
-          <div className="flex flex-col">
-            <div>Welcome Victor {theme}</div>
-            <div className="flex flex-row space-x-2">
-              <button
-                className="py-2 px-4 bg-slate-900 text-white rounded-md border"
-                onClick={() => setTheme("dark")}
-              >
-                dark
-              </button>
+      <Navbar />
 
-              <button
-                className="py-2 px-4 bg-white text-slate-900 rounded-md border"
-                onClick={() => setTheme("light")}
-              >
-                light
-              </button>
+      <Side />
 
-              <button
-                className="py-2 px-4 bg-green-500 rounded-md border"
-                onClick={() => setTheme("system")}
-              >
-                system
-              </button>
+      <div className={`${theme}  mx-auto px-[150px]`}>
+        <main className="h-full">
+          <HeroSection />
+          <AboutSection />
+          <section id="experience" className="max-w-[700px] mx-auto py-[100px]">
+            <div className="section-header section-header-size flex items-end mt-[10px] mb-10 font-semibold leading-[1.1]">
+              <span className="section-header-size-2 mr-[10px] font-normal relative bottom-1 text-green">
+                02.
+              </span>
+              <span className="font-sans">Where I&apos;ve Worked</span>
             </div>
-          </div>
-        </div>
+          </section>
+          <section id="work">Work</section>
+          <section id="contact">Contact</section>
+        </main>
       </div>
     </div>
   );

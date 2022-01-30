@@ -172,3 +172,54 @@
     src: url(/fonts/SFMono/SFMono-Semibold.woff2) format("woff2");
   }
 }
+
+.hero-size {
+  font-size: clamp(40px, 8vw, 80px);
+}
+
+.side::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0 auto;
+  background-color: #a8b2d1;
+}
+
+.nav-shadow {
+  background-color: rgba(10, 25, 47, 0.85);
+  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+}
+
+.section-header::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -14px;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #233554;
+}
+
+.section-header-size {
+  font-size: clamp(26px, 5vw, 32px);
+}
+
+.section-header-size-2 {
+  font-size: clamp(16px,3vw,20px);
+}
+
+.grid-inner {
+  grid-template-columns: 3fr 2fr;
+}
+
+.tech::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  color: #64FFDA;
+  font-size: 14px;
+  line-height: 12px;
+}

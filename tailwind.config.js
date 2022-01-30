@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   darkMode: "class",
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
@@ -14,6 +16,25 @@ module.exports = {
           "system-ui",
           "sans-serif",
         ],
+      },
+      colors: {
+        green: {
+          ...colors.green,
+          DEFAULT: "#64FFDA",
+        },
+        blue: {
+          ...colors.blue,
+          navy: "#0a192f",
+          dark: {
+            navy: "#020c1b",
+          },
+        },
+        slate: {
+          ...colors.slate,
+          DEFAULT: "#8892b0",
+          light: "#a8b2d1",
+          lightest: "#ccd6f6",
+        },
       },
     },
   },
