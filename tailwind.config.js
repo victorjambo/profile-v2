@@ -21,6 +21,7 @@ module.exports = {
         green: {
           ...colors.green,
           DEFAULT: "#64FFDA",
+          tint: "rgba(100, 255, 218, 0.1)",
         },
         blue: {
           ...colors.blue,

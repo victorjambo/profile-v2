@@ -1,3 +1,5 @@
+import { DEV_EMAIL } from "@/utils/data";
+
 const ContactSection: React.FC = () => {
   return (
     <section
@@ -14,8 +16,8 @@ const ContactSection: React.FC = () => {
         hi, I&apos;ll try my best to get back to you!
       </p>
       <a
-        href="mailto:victormutaijambo@gmail.com"
-        className="text-green border border-green py-5 px-7 text-sm font-mono leading-[1] cursor-pointer rounded-md"
+        href={`mailto:${DEV_EMAIL}`}
+        className="text-green hover:bg-green-tint border border-green py-5 px-7 text-sm font-mono leading-[1] cursor-pointer rounded-md"
         target="_blank"
         rel="noreferrer"
       >

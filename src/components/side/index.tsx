@@ -1,3 +1,5 @@
+import { DEV_EMAIL } from "@/utils/data";
+
 const Side: React.FC = () => {
   return (
     <>
@@ -11,7 +13,7 @@ const Side: React.FC = () => {
       <MainComponent orientation="right-10">
         <div className="flex flex-col items-center relative side">
           <a className="my-5 p-[10px] font-mono text-xs tracking-widest [writing-mode:vertical-rl]">
-            victormutaijambo@gmail.com
+            {DEV_EMAIL}
           </a>
         </div>
       </MainComponent>

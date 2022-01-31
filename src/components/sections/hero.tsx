@@ -1,3 +1,5 @@
+import { DEV_NAME } from "@/utils/data";
+
 const HeroSection: React.FC = () => {
   return (
     <section id="hero" className="max-w-[1000px] mx-auto">
@@ -6,7 +8,7 @@ const HeroSection: React.FC = () => {
           Hi, my name is
         </div>
         <div className="font-sans text-slate-lightest font-semibold leading-[1.1] hero-size">
-          Victor Mutai.
+          {DEV_NAME}.
         </div>
         <div className="font-sans text-slate font-semibold hero-size mt-[10px] leading-[0.9]">
           I build things for the web3.
@@ -18,7 +20,7 @@ const HeroSection: React.FC = () => {
           @SyndicateDao
         </p>
         <div className="mt-[50px]">
-          <a className="text-green border border-green rounded py-5 px-7 text-sm">
+          <a className="text-green hover:bg-green-tint border border-green rounded py-5 px-7 text-sm">
             Check out my course!
           </a>
         </div>

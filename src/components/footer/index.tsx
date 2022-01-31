@@ -1,3 +1,4 @@
+import { DEV_NAME, GIT_REPO } from "@/utils/data";
 import { StarIcon } from "@heroicons/react/outline";
 
 const Footer: React.FC = () => {
@@ -5,10 +6,10 @@ const Footer: React.FC = () => {
     <footer className="flex flex-col h-auto min-h-[70px] p-4 text-center">
       <div className="text-slate-light font-mono text-xs">
         <a
-          href="https://github.com/victorjambo/profile-v4"
+          href={GIT_REPO}
           className="p-[10px]"
         >
-          <div>Built by Victor Mutai</div>
+          <div>Built by {DEV_NAME}</div>
 
           <div className="mt-[10px]">
             <span className="inline-flex items-center px-2">

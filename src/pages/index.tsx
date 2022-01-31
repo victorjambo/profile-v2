@@ -16,12 +16,6 @@ const Home: NextPage = () => {
 
   return (
     <div>
-      <Head>
-        <title>Victor Mutai</title>
-        <meta name="description" content="Web3 Software Engineer" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <Navbar />
       <Side />
 

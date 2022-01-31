@@ -2,31 +2,7 @@ import { SectionHeader } from ".";
 
 import { Tab } from "@headlessui/react";
 import { classNames } from "@/utils/classNames";
-
-const companies = [
-  {
-    name: "SyndicateDao",
-    role: "Engineer",
-    duration: "May 2021 - Present",
-    link: "https://mutai.dev",
-    responsibilities: `<ul class="space-y-2">
-      <li class="list">Write modern, performant, maintainable code for a diverse array of client and internal projects</li>
-      <li class="list">Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify</li>
-      <li class="list">Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</li>
-      </ul>`,
-  },
-  {
-    name: "Prezi",
-    role: "Engineer",
-    duration: "Jan 2019 - April 2021",
-    link: "https://mutai.dev",
-    responsibilities: `<ul class="space-y-2">
-      <li class="list">Write modern, performant, maintainable code for a diverse array of client and internal projects</li>
-      <li class="list">Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify</li>
-      <li class="list">Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</li>
-      </ul>`,
-  },
-];
+import { companies } from "@/utils/data";
 
 const ExperienceSection: React.FC = () => {
   return (
