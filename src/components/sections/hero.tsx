@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
           {DEV_NAME}.
         </div>
         <div className="font-sans text-slate-500 dark:text-slate font-semibold hero-size mt-[10px] leading-[0.9]">
-          I build things for the web3.
+          I build things for web3.
         </div>
         <p className="mt-5 max-w-lg font-sans text-slate-600 dark:text-slate leading-[24px]">
           I&apos;m a software engineer specializing in building (and
@@ -20,8 +20,8 @@ const HeroSection: React.FC = () => {
           @SyndicateDao
         </p>
         <div className="mt-[50px]">
-          <a className="text-sky-500 dark:text-green hover:bg-sky-50 dark:hover:bg-green-tint border border-sky-500 dark:border-green rounded py-5 px-7 text-sm cursor-pointer">
-            Check out my course!
+          <a href="https://resume.github.io/?victorjambo" target="_blank" className="text-sky-500 dark:text-green hover:bg-sky-50 dark:hover:bg-green-tint border border-sky-500 dark:border-green rounded py-5 px-7 text-sm cursor-pointer" rel="noreferrer">
+            Github Resume!
           </a>
         </div>
       </div>
