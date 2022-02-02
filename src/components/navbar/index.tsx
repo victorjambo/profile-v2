@@ -3,6 +3,7 @@ import { MenuAlt2Icon, XIcon } from "@heroicons/react/outline";
 import { classNames } from "@/utils/classNames";
 import ThemeDropdown from "./themeDropdown";
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 const navigation = [
   { id: "01", name: "About", href: "#about", current: true },
@@ -56,11 +57,13 @@ const Navbar = () => {
                 </div>
                 <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex-shrink-0 flex items-center">
-                    <img
-                      className="block h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                      alt="Workflow"
-                    />
+                    <Link href="/" passHref>
+                      <div className="flex flex-row text-3xl text-sky-500 dark:text-green cursor-pointer">
+                        <span>&#123;</span>
+                        <span className="text-2xl pt-1">VM</span>
+                        <span>&#125;</span>
+                      </div>
+                    </Link>
                   </div>
                 </div>
                 <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
