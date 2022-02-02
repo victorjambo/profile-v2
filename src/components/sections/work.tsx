@@ -16,11 +16,11 @@ const WorkSection: React.FC = () => {
           >
             <div className="project-content">
               <div>
-                <p className="py-[10px] text-green font-mono text-xs">
+                <p className="py-[10px] text-sky-500 dark:text-green font-mono text-xs">
                   Featured Project
                 </p>
 
-                <h3 className="mb-5 text-slate-lightest hover:text-green featured-size font-semibold">
+                <h3 className="mb-5 text-slate-500 dark:text-slate-lightest hover:text-sky-500 dark:hover:text-green featured-size font-semibold">
                   <a href={project.link}>{project.name}</a>
                 </h3>
 
@@ -28,17 +28,17 @@ const WorkSection: React.FC = () => {
                   <p>{project.body}</p>
                 </div>
 
-                <ul className="flex flex-wrap mt-[25px] mb-[10px] font-mono text-slate-light text-xs">
+                <ul className="flex flex-wrap mt-[25px] mb-[10px] font-mono text-slate-500 dark:text-slate-light text-xs">
                   {project.technologies.map((tech) => (
                     <li key={tech}>{tech}</li>
                   ))}
                 </ul>
 
-                <div className="flex items-center mt-[10px] -ml-[10px] text-slate-lightest externals">
+                <div className="flex items-center mt-[10px] -ml-[10px] text-slate-600 dark:text-slate-lightest externals">
                   {project.learnMore && (
                     <a
                       href={project.learnMore}
-                      className="text-green hover:bg-green-tint border border-green rounded py-3 px-4 font-mono m-[10px] text-xs"
+                      className="text-sky-500 dark:text-green hover:bg-sky-50 dark:hover:bg-green-tint border border-sky-500 dark:border-green rounded py-3 px-4 font-mono m-[10px] text-xs"
                     >
                       Learn More
                     </a>

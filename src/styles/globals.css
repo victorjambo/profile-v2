@@ -173,7 +173,7 @@
   }
 
   .list {
-    @apply relative pl-5 list-deco;
+    @apply relative pl-5 before:content-['▹'] before:absolute before:left-0 top-[5px] before:text-sm before:text-sky-500 before:dark:text-green;
   }
 }
 
@@ -185,18 +185,8 @@
   font-size: clamp(24px, 5vw, 28px);
 }
 
-.side::after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 90px;
-  margin: 0 auto;
-  background-color: #a8b2d1;
-}
-
-.nav-shadow {
-  background-color: rgba(10, 25, 47, 0.85);
-  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+.side {
+  @apply after:content-[''] after:block after:w-[1px] after:h-[90px] after:mx-auto after:bg-sky-500 after:dark:bg-slate-light
 }
 
 .section-header::after {
@@ -220,16 +210,6 @@
 
 .grid-inner {
   grid-template-columns: 3fr 2fr;
-}
-
-.list-deco::before {
-  content: "▹";
-  position: absolute;
-  left: 0;
-  top: 5px;
-  color: #64ffda;
-  font-size: 14px;
-  line-height: 12px;
 }
 
 .title {

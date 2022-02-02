@@ -6,7 +6,7 @@ const AboutSection: React.FC = () => {
   return (
     <section id="about" className="max-w-[900px] mx-auto">
       <SectionHeader idx="01." title="About me" />
-      <div className="grid gap-[50px] grid-inner text-slate font-sans">
+      <div className="grid gap-[50px] grid-inner text-slate-600 dark:text-slate font-sans">
         <div className="space-y-3">
           {aboutMe.map((about) => (
             <p key={about}>{about}</p>
@@ -20,7 +20,7 @@ const AboutSection: React.FC = () => {
             ))}
           </ul>
         </div>
-        <div className="bg-green hover:bg-transparent rounded-2xl h-max">
+        <div className="dark:bg-green bg-sky-500 hover:bg-transparent rounded-2xl h-max">
           <Image
             src="/images/me.jpeg"
             alt="me"

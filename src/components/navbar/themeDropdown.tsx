@@ -33,7 +33,7 @@ const ThemeDropdown: React.FC = () => {
       <div>
         <Menu.Button className="flex text-sm rounded-full">
           <span className="sr-only">Theme</span>
-          <Icon className="h-5 w-5 hover:text-teal-500 dark:hover:text-green" />
+          <Icon className="h-5 w-5 hover:text-sky-500 dark:hover:text-green" />
         </Menu.Button>
       </div>
       <Transition
@@ -52,7 +52,7 @@ const ThemeDropdown: React.FC = () => {
                 className={classNames(
                   active ? "bg-gray-100 dark:bg-slate-600/30" : "",
                   theme === Theme.LIGHT
-                    ? "text-sky-500"
+                    ? "text-sky-500 dark:text-green"
                     : "text-gray-700 dark:text-slate-300",
                   "px-4 py-2 text-sm flex flex-row space-x-2 cursor-pointer"
                 )}
@@ -69,7 +69,7 @@ const ThemeDropdown: React.FC = () => {
                 className={classNames(
                   active ? "bg-gray-100 dark:bg-slate-600/30" : "",
                   theme === Theme.DARK
-                    ? "text-sky-500"
+                    ? "text-sky-500 dark:text-green"
                     : "text-gray-700 dark:text-slate-300",
                   "px-4 py-2 text-sm flex flex-row space-x-2 cursor-pointer"
                 )}
@@ -86,7 +86,7 @@ const ThemeDropdown: React.FC = () => {
                 className={classNames(
                   active ? "bg-gray-100 dark:bg-slate-600/30" : "",
                   theme === Theme.SYSTEM
-                    ? "text-sky-500"
+                    ? "text-sky-500 dark:text-green"
                     : "text-gray-700 dark:text-slate-300",
                   "px-4 py-2 text-sm flex flex-row space-x-2 cursor-pointer"
                 )}

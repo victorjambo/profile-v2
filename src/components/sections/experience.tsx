@@ -10,17 +10,17 @@ const ExperienceSection: React.FC = () => {
       <SectionHeader idx="02." title="Where I've Worked" />
 
       <Tab.Group>
-        <div className="min-h-[340px] flex flex-row text-slate-light">
+        <div className="min-h-[340px] flex flex-row text-slate-800 dark:text-slate-light">
           <Tab.List className="flex flex-col w-max">
             {companies.map((company) => (
               <Tab
                 key={company.name}
                 className={({ selected }) =>
                   classNames(
-                    "flex items-center h-[42px] px-5 pb-[2px] border-l-2 cursor-pointer font-mono text-[13px] text-left whitespace-nowrap hover:bg-blue-navy-light",
+                    "flex items-center h-[42px] px-5 pb-[2px] border-l-2 cursor-pointer font-mono text-[13px] text-left whitespace-nowrap hover:bg-gray-100 dark:hover:bg-blue-navy-light",
                     selected
-                      ? "border-green text-green"
-                      : "border-blue-navy-lightest"
+                      ? "border-sky-500 dark:border-green text-sky-500 dark:text-green"
+                      : "border-slate-300 dark:border-blue-navy-lightest"
                   )
                 }
               >
@@ -34,22 +34,22 @@ const ExperienceSection: React.FC = () => {
                 key={company.name}
                 className="px-[5px] py-[10px] h-auto w-full"
               >
-                <div className="mb-[2px] text-[22px] font-medium leading-snug text-slate-lightest">
+                <div className="mb-[2px] text-[22px] font-medium leading-snug text-slate-600 dark:text-slate-lightest">
                   {company.role}&nbsp;&nbsp;
                   <a
                     href={company.link}
                     target="_blank"
-                    className="text-green cursor-pointer inline-block"
+                    className="text-sky-500 dark:text-green cursor-pointer inline-block"
                     rel="noreferrer"
                   >
                     @{company.name}
                   </a>
                 </div>
-                <div className="mb-6 text-slate-light text-xs font-mono">
+                <div className="mb-6 text-slate-400 dark:text-slate-lightest text-xs font-mono">
                   {company.duration}
                 </div>
                 <div
-                  className="text-slate font-sans leading-[24px]"
+                  className="text-slate-600 dark:text-slate font-sans leading-[24px]"
                   dangerouslySetInnerHTML={{ __html: company.responsibilities }}
                 />
               </Tab.Panel>

@@ -28,7 +28,7 @@ const MainComponent: React.FC<{ orientation: string }> = ({
   orientation,
 }) => {
   return (
-    <div className={`fixed bottom-0 z-10 text-slate-light ${orientation}`}>
+    <div className={`fixed bottom-0 z-10 text-sky-500 dark:text-slate-light ${orientation}`}>
       {children}
     </div>
   );
