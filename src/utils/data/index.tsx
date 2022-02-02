@@ -9,18 +9,12 @@ export const technologies = [
 ];
 
 export const aboutMe = [
-  `Hello! My name is Brittany and I enjoy creating things that live on
-    the internet. My interest in web development started back in 2012
-    when I decided to try editing custom Tumblr themes — turns out
-    hacking together a custom reblog button taught me a lot about HTML &
-    CSS!`,
-  `Fast-forward to today, and I’ve had the privilege of working at an
-    advertising agency, a start-up, a huge corporation, and a
-    student-led design studio. My main focus these days is building
-    accessible, inclusive products and digital experiences at
-    Upstatement for a variety of clients.`,
-  `I also recently launched a course that covers everything you need to
-    build a web app with the Spotify API using Node & React.`,
+  `Hello! My name is Victor and I am a software engineer whose mission 
+    is to help companies solve their complex problems in the simplest 
+    way possible in various business areas. I care about clean, robust 
+    code and use agile techniques to deliver tested and high-quality 
+    solutions. I enjoy venturing into the unknown and providing 
+    companies with the edge they need with software.`,
 ];
 
 export const DEV_NAME = "Victor Mutai";
@@ -31,9 +25,9 @@ export const GIT_REPO = "https://github.com/victorjambo/profile-v4";
 export const companies = [
   {
     name: "SyndicateDao",
-    role: "Engineer",
+    role: "Software Engineer",
     duration: "May 2021 - Present",
-    link: "https://mutai.dev",
+    link: "https://twitter.com/SyndicateDao",
     subtitle: "",
     responsibilities: `<ul class="space-y-2">
       <li class="list">Write modern, performant, maintainable code for a diverse array of client and internal projects</li>
@@ -43,14 +37,65 @@ export const companies = [
   },
   {
     name: "Prezi",
-    role: "Engineer",
-    duration: "Jan 2019 - April 2021",
-    link: "https://mutai.dev",
+    role: "Software Engineer",
+    duration: "Jun 2019 - April 2021",
+    link: "https://prezi.com/",
+    subtitle: "Full stack developer focusing on Django microservices on a variety of projects including;",
+    responsibilities: `<ul class="space-y-2">
+      <li class="list">Setup and configuration of React into a Django app with Webpack, and AWS (EC2, S3, DynamoDB, Kibana).</li>
+      <li class="list">Django CMS including custom plugin creation.</li>
+      <li class="list">Continuous integration with Jenkins Automated acceptance testing using Capybara, jQuery and less for frontend work</li>
+      <li class="list">Creating internal APIs.</li>
+      <li class="list">Integrating with 3rd party APIs including, Zuora, AllPago, Braintree, Kount, Paypal and SalesForce.</li>
+      <li class="list">Migration on payments and subscriptions data of hundreds of thousands of users between two major subscription-management service providers.</li>
+      <li class="list">Adjusting Payment flows to accommodate new experiments with A/B tests.</li>
+      </ul>`,
+  },
+  {
+    name: "Andela",
+    role: "Software Engineer",
+    duration: "May 2018 - Sept 2020",
+    link: "https://andela.com/",
     subtitle: "",
     responsibilities: `<ul class="space-y-2">
-      <li class="list">Write modern, performant, maintainable code for a diverse array of client and internal projects</li>
-      <li class="list">Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify</li>
-      <li class="list">Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</li>
+      <li class="list">Assumed the role of Frontend technical team lead for our internal social media platform.</li>
+      <li class="list">Responsible for design and implement frontend features with ReactJS.</li>
+      <li class="list">Collaborating with peers and stakeholders in a fast-paced distributed team.</li>
+      <li class="list">Mentor, onboard junior engineers, code reviews, and plan and delegate assignments.</li>
+      <li class="list">Design of a backend REST API with Python Flask.</li>
+      <li class="list">Screen candidates and conducting technical interviews.</li>
+      </ul>`,
+  },
+  {
+    name: "Glassdoor",
+    role: "Data Aggregation Specialist",
+    duration: "Sep 2015 – Apr 2018",
+    link: "https://glassdoor.com/",
+    subtitle: "I helped build and maintain web crawlers, monitor and analyze the overall quality of data collected by web crawlers, and provide technical support for the customer service team.",
+    responsibilities: `<ul class="space-y-2">
+      <li class="list">Created & developed a new automation tool for my team to automate production workflow.</li>
+      <li class="list">Responsible for web crawling jobs from companies' career page source(HTML/CSS), job boards or ATS using custom XPaths & Regex.</li>
+      <li class="list">Automated employers career site & tested their web elements functionality.</li>
+      <li class="list">Debugging faulty or error import configurations.</li>
+      <li class="list">Tracking bugs with JIRA agile environment for client-related issues.</li>
+      <li class="list">Reviewed errors detected by Glassdoor's automated system & escalated issues proactively.</li>
+      <li class="list">Worked with a fast-paced team to handle a high volume of requests on time.</li>
+      <li class="list">Monitored existing job content & determined if job data is being pulled correctly.</li>
+      <li class="list">Provide technical support for sales and customer success.</li>
+      </ul>`,
+  },
+  {
+    name: "Upwork",
+    role: "Web Developer - freelance",
+    duration: "Dec 2016 – Dec 2017",
+    link: "https://upwork.com/",
+    subtitle: "",
+    responsibilities: `<ul class="space-y-2">
+      <li class="list">Designed, developed and maintained a variety of web sites as required.</li>
+      <li class="list">Updated web style sheets and pages appropriately.</li>
+      <li class="list">Designing and implementing new features and functionality.</li>
+      <li class="list">Establishing and guiding the system/website’s architecture.</li>
+      <li class="list">Perform DevOps duties of hosting to cloud services like AWS, Azure, and GCP.</li>
       </ul>`,
   },
 ];
@@ -214,5 +259,5 @@ export const social = [
     icon: "/images/social/icons8-medium.svg",
     name: "medium",
     link: "https://victorjambo.medium.com/",
-  }
-]
+  },
+];

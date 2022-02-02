@@ -48,6 +48,9 @@ const ExperienceSection: React.FC = () => {
                 <div className="mb-6 text-slate-400 dark:text-slate-lightest text-xs font-mono">
                   {company.duration}
                 </div>
+                <div className="text-slate-600 dark:text-slate font-sans leading-[24px]">
+                  {company.subtitle}
+                </div>
                 <div
                   className="text-slate-600 dark:text-slate font-sans leading-[24px]"
                   dangerouslySetInnerHTML={{ __html: company.responsibilities }}
