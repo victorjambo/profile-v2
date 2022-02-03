@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 const navigation = [
-  { id: "01", name: "About", href: "#about", current: true },
+  { id: "01", name: "About", href: "#about", current: false },
   { id: "02", name: "Experience", href: "#experience", current: false },
   { id: "03", name: "Work", href: "#work", current: false },
   { id: "04", name: "Contact", href: "#contact", current: false },
