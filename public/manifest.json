@@ -1,0 +1,10 @@
+{
+  "short_name": "Mutai",
+  "name": "Victor Mutai",
+  "description": "Victor Mutai Software Engineer",
+  "iconPath": "/images/favicon.ico",
+  "providedBy": {
+    "name": "Victor Mutai",
+    "url": "https://twitter.com/victor_jambo"
+  }
+}
