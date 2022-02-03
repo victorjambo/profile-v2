@@ -19,7 +19,7 @@ const Side: React.FC = () => {
         </div>
       </MainComponent>
       <MainComponent orientation="right-10">
-        <div className="flex flex-col items-center relative side">
+        <div className="flex flex-col items-center relative side hover:text-sky-500 dark:hover:text-green">
           <a className="my-5 p-[10px] font-mono text-xs tracking-widest [writing-mode:vertical-rl] cursor-pointer">
             {DEV_EMAIL}
           </a>
@@ -37,7 +37,7 @@ const MainComponent: React.FC<{ orientation: string }> = ({
 }) => {
   return (
     <div
-      className={`fixed bottom-0 z-10 text-sky-500 dark:text-slate-light ${orientation}`}
+      className={`fixed bottom-0 z-10 text-slate ${orientation}`}
     >
       {children}
     </div>

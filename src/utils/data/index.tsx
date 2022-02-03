@@ -9,12 +9,11 @@ export const technologies = [
 ];
 
 export const aboutMe = [
-  `Hello! My name is Victor and I am a software engineer whose mission 
-    is to help companies solve their complex problems in the simplest 
-    way possible in various business areas. I care about clean, robust 
-    code and use agile techniques to deliver tested and high-quality 
-    solutions. I enjoy venturing into the unknown and providing 
-    companies with the edge they need with software.`,
+  `Hello! I am a software engineer whose mission is to help companies
+    solve their complex problems in the simplest way possible in various 
+    business areas. I care about clean, robust code and use agile techniques 
+    to deliver tested and high-quality solutions. I enjoy venturing into the 
+    unknown and providing companies with the edge they need with software.`,
 ];
 
 export const DEV_NAME = "Victor Mutai";
@@ -30,9 +29,12 @@ export const companies = [
     link: "https://twitter.com/SyndicateDao",
     subtitle: "",
     responsibilities: `<ul class="space-y-2">
-      <li class="list">Write modern, performant, maintainable code for a diverse array of client and internal projects</li>
-      <li class="list">Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify</li>
-      <li class="list">Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis</li>
+      <li class="list">Design, code, test and deploy smart contracts for Ethereum-based blockchains.</li>
+      <li class="list">Develop smart contracts and integrate smart contracts to the web3 apps.</li>
+      <li class="list">Integrate analytical and transactional information from The Graph.</li>
+      <li class="list">Build components to manage wallet interactions.</li>
+      <li class="list">Write smart contracts tied to membership NFTs.</li>
+      <li class="list">recruit / build a team of other web3 engineers to work with.</li>
       </ul>`,
   },
   {
@@ -40,7 +42,8 @@ export const companies = [
     role: "Software Engineer",
     duration: "Jun 2019 - April 2021",
     link: "https://prezi.com/",
-    subtitle: "Full stack developer focusing on Django microservices on a variety of projects including;",
+    subtitle:
+      "Full stack developer focusing on Django microservices on a variety of projects including;",
     responsibilities: `<ul class="space-y-2">
       <li class="list">Setup and configuration of React into a Django app with Webpack, and AWS (EC2, S3, DynamoDB, Kibana).</li>
       <li class="list">Django CMS including custom plugin creation.</li>
@@ -71,7 +74,8 @@ export const companies = [
     role: "Data Aggregation Specialist",
     duration: "Sep 2015 – Apr 2018",
     link: "https://glassdoor.com/",
-    subtitle: "I helped build and maintain web crawlers, monitor and analyze the overall quality of data collected by web crawlers, and provide technical support for the customer service team.",
+    subtitle:
+      "I helped build and maintain web crawlers, monitor and analyze the overall quality of data collected by web crawlers, and provide technical support for the customer service team.",
     responsibilities: `<ul class="space-y-2">
       <li class="list">Created & developed a new automation tool for my team to automate production workflow.</li>
       <li class="list">Responsible for web crawling jobs from companies' career page source(HTML/CSS), job boards or ATS using custom XPaths & Regex.</li>
@@ -102,133 +106,39 @@ export const companies = [
 
 export const projects = [
   {
-    name: "Halcyon Theme",
-    link: "#",
+    name: "Tokenkid",
+    link: "https://tokenkid.netlify.app/",
     technologies: [
       "React",
-      "Styled Components",
-      "Express",
-      "Spotify API",
-      "Heroku",
+      "Tailwind",
+      "NextJs",
+      "Solidity",
+      "thegraph",
+      "Typescript",
     ],
     body: `A web app for visualizing personalized Spotify data. View your
       top artists, top tracks, recently played tracks, and detailed
       audio information about each track. Create and save new
       playlists of recommended tracks based on your existing
       playlists and more.`,
-    learnMore: "https://mutai.dev",
-    git: "https://github.com/victorjambo/profile-v4",
-    share: "https://mutai.dev",
+    learnMore: "https://tokenkid.netlify.app/",
+    git: "https://github.com/victorjambo/tokenkid",
+    share: "https://tokenkid.netlify.app/",
     image:
       "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACBklEQVQoz23O7W6bMBQGYO5iSoEY7GBjY2MwH/6AJk3SrStVlQbabJq23f9lTCRR1x+VHllH57zHtie76VOZmbidhDuf9vOMl7vxgyl3k7Bj2b/uH093D6dm89rfv3X7N2Gny/Rj3hP2+J+Zcf2iuvHv7x/jdHo5vv359fM4nrL2Ov2Y94R5eSfdUXZj4UbpRqaP3BxzN3Izk+4qn9+45j2uD1wfhDlwc5BuLLqp6Maz6XLLpX4vcnvk5zA3B4+3z0I/0XpgzROrh7Sa0Xq4dLL2Oa0er+qBzc2B1XOeNoPH6iHhOiblTSQT0SNuAFE+Uj4sfVjG1CTCkWIdEwNQuYjLm7j0oQqQiqjziHpIWJPr9ZI6IDa0vaftGkoXi36ZuiXRMe9w+ZVXD7zdFlUPM+OjClJDilsvVd8xazBvF7EE1LF6l5s9re6R3GK5BakNsUGpw/ldVN5JZRKpfVQBXENmPVJ+A6hEpFlEwk8aLG+pcii3ATbBqvGhilKbFDuidqxaA96F2IH5RyYkxlvJPYhFKjdLogOssVpz2ydNH3MN0yZMKjAvb0W9E/WGlBvIbudNrENqvVW+A7Egol/AMsQaFWskWsRNIjrITLCqQGri1BLek9zBrLmBlT9Ty6T1VmIbRDxaqS9hFiRNgFsf1T6q3oHUQNbHqQXMwsxA2kbUAKLDpP0H4Daf056mKVMAAAAASUVORK5CYII=",
   },
-
   {
-    name: "Halcyon Theme",
+    name: "Profile v2",
     link: "#",
-    technologies: [
-      "React",
-      "Styled Components",
-      "Express",
-      "Spotify API",
-      "Heroku",
-    ],
+    technologies: ["React", "Tailwind", "NextJs", "Typescript"],
     body: `A web app for visualizing personalized Spotify data. View your
       top artists, top tracks, recently played tracks, and detailed
       audio information about each track. Create and save new
       playlists of recommended tracks based on your existing
       playlists and more.`,
-    learnMore: "https://mutai.dev",
+    learnMore: "#",
     git: "https://github.com/victorjambo/profile-v4",
-    share: "https://mutai.dev",
-    image:
-      "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACBklEQVQoz23O7W6bMBQGYO5iSoEY7GBjY2MwH/6AJk3SrStVlQbabJq23f9lTCRR1x+VHllH57zHtie76VOZmbidhDuf9vOMl7vxgyl3k7Bj2b/uH093D6dm89rfv3X7N2Gny/Rj3hP2+J+Zcf2iuvHv7x/jdHo5vv359fM4nrL2Ov2Y94R5eSfdUXZj4UbpRqaP3BxzN3Izk+4qn9+45j2uD1wfhDlwc5BuLLqp6Maz6XLLpX4vcnvk5zA3B4+3z0I/0XpgzROrh7Sa0Xq4dLL2Oa0er+qBzc2B1XOeNoPH6iHhOiblTSQT0SNuAFE+Uj4sfVjG1CTCkWIdEwNQuYjLm7j0oQqQiqjziHpIWJPr9ZI6IDa0vaftGkoXi36ZuiXRMe9w+ZVXD7zdFlUPM+OjClJDilsvVd8xazBvF7EE1LF6l5s9re6R3GK5BakNsUGpw/ldVN5JZRKpfVQBXENmPVJ+A6hEpFlEwk8aLG+pcii3ATbBqvGhilKbFDuidqxaA96F2IH5RyYkxlvJPYhFKjdLogOssVpz2ydNH3MN0yZMKjAvb0W9E/WGlBvIbudNrENqvVW+A7Egol/AMsQaFWskWsRNIjrITLCqQGri1BLek9zBrLmBlT9Ty6T1VmIbRDxaqS9hFiRNgFsf1T6q3oHUQNbHqQXMwsxA2kbUAKLDpP0H4Daf056mKVMAAAAASUVORK5CYII=",
-  },
-
-  {
-    name: "Halcyon Theme",
-    link: "#",
-    technologies: [
-      "React",
-      "Styled Components",
-      "Express",
-      "Spotify API",
-      "Heroku",
-    ],
-    body: `A web app for visualizing personalized Spotify data. View your
-      top artists, top tracks, recently played tracks, and detailed
-      audio information about each track. Create and save new
-      playlists of recommended tracks based on your existing
-      playlists and more.`,
-    learnMore: "https://mutai.dev",
-    git: "https://github.com/victorjambo/profile-v4",
-    share: "https://mutai.dev",
-    image:
-      "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACBklEQVQoz23O7W6bMBQGYO5iSoEY7GBjY2MwH/6AJk3SrStVlQbabJq23f9lTCRR1x+VHllH57zHtie76VOZmbidhDuf9vOMl7vxgyl3k7Bj2b/uH093D6dm89rfv3X7N2Gny/Rj3hP2+J+Zcf2iuvHv7x/jdHo5vv359fM4nrL2Ov2Y94R5eSfdUXZj4UbpRqaP3BxzN3Izk+4qn9+45j2uD1wfhDlwc5BuLLqp6Maz6XLLpX4vcnvk5zA3B4+3z0I/0XpgzROrh7Sa0Xq4dLL2Oa0er+qBzc2B1XOeNoPH6iHhOiblTSQT0SNuAFE+Uj4sfVjG1CTCkWIdEwNQuYjLm7j0oQqQiqjziHpIWJPr9ZI6IDa0vaftGkoXi36ZuiXRMe9w+ZVXD7zdFlUPM+OjClJDilsvVd8xazBvF7EE1LF6l5s9re6R3GK5BakNsUGpw/ldVN5JZRKpfVQBXENmPVJ+A6hEpFlEwk8aLG+pcii3ATbBqvGhilKbFDuidqxaA96F2IH5RyYkxlvJPYhFKjdLogOssVpz2ydNH3MN0yZMKjAvb0W9E/WGlBvIbudNrENqvVW+A7Egol/AMsQaFWskWsRNIjrITLCqQGri1BLek9zBrLmBlT9Ty6T1VmIbRDxaqS9hFiRNgFsf1T6q3oHUQNbHqQXMwsxA2kbUAKLDpP0H4Daf056mKVMAAAAASUVORK5CYII=",
-  },
-
-  {
-    name: "Halcyon Theme",
-    link: "#",
-    technologies: [
-      "React",
-      "Styled Components",
-      "Express",
-      "Spotify API",
-      "Heroku",
-    ],
-    body: `A web app for visualizing personalized Spotify data. View your
-      top artists, top tracks, recently played tracks, and detailed
-      audio information about each track. Create and save new
-      playlists of recommended tracks based on your existing
-      playlists and more.`,
-    learnMore: "https://mutai.dev",
-    git: "https://github.com/victorjambo/profile-v4",
-    share: "https://mutai.dev",
-    image:
-      "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACBklEQVQoz23O7W6bMBQGYO5iSoEY7GBjY2MwH/6AJk3SrStVlQbabJq23f9lTCRR1x+VHllH57zHtie76VOZmbidhDuf9vOMl7vxgyl3k7Bj2b/uH093D6dm89rfv3X7N2Gny/Rj3hP2+J+Zcf2iuvHv7x/jdHo5vv359fM4nrL2Ov2Y94R5eSfdUXZj4UbpRqaP3BxzN3Izk+4qn9+45j2uD1wfhDlwc5BuLLqp6Maz6XLLpX4vcnvk5zA3B4+3z0I/0XpgzROrh7Sa0Xq4dLL2Oa0er+qBzc2B1XOeNoPH6iHhOiblTSQT0SNuAFE+Uj4sfVjG1CTCkWIdEwNQuYjLm7j0oQqQiqjziHpIWJPr9ZI6IDa0vaftGkoXi36ZuiXRMe9w+ZVXD7zdFlUPM+OjClJDilsvVd8xazBvF7EE1LF6l5s9re6R3GK5BakNsUGpw/ldVN5JZRKpfVQBXENmPVJ+A6hEpFlEwk8aLG+pcii3ATbBqvGhilKbFDuidqxaA96F2IH5RyYkxlvJPYhFKjdLogOssVpz2ydNH3MN0yZMKjAvb0W9E/WGlBvIbudNrENqvVW+A7Egol/AMsQaFWskWsRNIjrITLCqQGri1BLek9zBrLmBlT9Ty6T1VmIbRDxaqS9hFiRNgFsf1T6q3oHUQNbHqQXMwsxA2kbUAKLDpP0H4Daf056mKVMAAAAASUVORK5CYII=",
-  },
-
-  {
-    name: "Halcyon Theme",
-    link: "#",
-    technologies: [
-      "React",
-      "Styled Components",
-      "Express",
-      "Spotify API",
-      "Heroku",
-    ],
-    body: `A web app for visualizing personalized Spotify data. View your
-      top artists, top tracks, recently played tracks, and detailed
-      audio information about each track. Create and save new
-      playlists of recommended tracks based on your existing
-      playlists and more.`,
-    learnMore: "https://mutai.dev",
-    git: "https://github.com/victorjambo/profile-v4",
-    share: "https://mutai.dev",
-    image:
-      "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACBklEQVQoz23O7W6bMBQGYO5iSoEY7GBjY2MwH/6AJk3SrStVlQbabJq23f9lTCRR1x+VHllH57zHtie76VOZmbidhDuf9vOMl7vxgyl3k7Bj2b/uH093D6dm89rfv3X7N2Gny/Rj3hP2+J+Zcf2iuvHv7x/jdHo5vv359fM4nrL2Ov2Y94R5eSfdUXZj4UbpRqaP3BxzN3Izk+4qn9+45j2uD1wfhDlwc5BuLLqp6Maz6XLLpX4vcnvk5zA3B4+3z0I/0XpgzROrh7Sa0Xq4dLL2Oa0er+qBzc2B1XOeNoPH6iHhOiblTSQT0SNuAFE+Uj4sfVjG1CTCkWIdEwNQuYjLm7j0oQqQiqjziHpIWJPr9ZI6IDa0vaftGkoXi36ZuiXRMe9w+ZVXD7zdFlUPM+OjClJDilsvVd8xazBvF7EE1LF6l5s9re6R3GK5BakNsUGpw/ldVN5JZRKpfVQBXENmPVJ+A6hEpFlEwk8aLG+pcii3ATbBqvGhilKbFDuidqxaA96F2IH5RyYkxlvJPYhFKjdLogOssVpz2ydNH3MN0yZMKjAvb0W9E/WGlBvIbudNrENqvVW+A7Egol/AMsQaFWskWsRNIjrITLCqQGri1BLek9zBrLmBlT9Ty6T1VmIbRDxaqS9hFiRNgFsf1T6q3oHUQNbHqQXMwsxA2kbUAKLDpP0H4Daf056mKVMAAAAASUVORK5CYII=",
-  },
-
-  {
-    name: "Halcyon Theme",
-    link: "#",
-    technologies: [
-      "React",
-      "Styled Components",
-      "Express",
-      "Spotify API",
-      "Heroku",
-    ],
-    body: `A web app for visualizing personalized Spotify data. View your
-      top artists, top tracks, recently played tracks, and detailed
-      audio information about each track. Create and save new
-      playlists of recommended tracks based on your existing
-      playlists and more.`,
-    learnMore: "https://mutai.dev",
-    git: "https://github.com/victorjambo/profile-v4",
-    share: "https://mutai.dev",
+    share: "#",
     image:
       "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACBklEQVQoz23O7W6bMBQGYO5iSoEY7GBjY2MwH/6AJk3SrStVlQbabJq23f9lTCRR1x+VHllH57zHtie76VOZmbidhDuf9vOMl7vxgyl3k7Bj2b/uH093D6dm89rfv3X7N2Gny/Rj3hP2+J+Zcf2iuvHv7x/jdHo5vv359fM4nrL2Ov2Y94R5eSfdUXZj4UbpRqaP3BxzN3Izk+4qn9+45j2uD1wfhDlwc5BuLLqp6Maz6XLLpX4vcnvk5zA3B4+3z0I/0XpgzROrh7Sa0Xq4dLL2Oa0er+qBzc2B1XOeNoPH6iHhOiblTSQT0SNuAFE+Uj4sfVjG1CTCkWIdEwNQuYjLm7j0oQqQiqjziHpIWJPr9ZI6IDa0vaftGkoXi36ZuiXRMe9w+ZVXD7zdFlUPM+OjClJDilsvVd8xazBvF7EE1LF6l5s9re6R3GK5BakNsUGpw/ldVN5JZRKpfVQBXENmPVJ+A6hEpFlEwk8aLG+pcii3ATbBqvGhilKbFDuidqxaA96F2IH5RyYkxlvJPYhFKjdLogOssVpz2ydNH3MN0yZMKjAvb0W9E/WGlBvIbudNrENqvVW+A7Egol/AMsQaFWskWsRNIjrITLCqQGri1BLek9zBrLmBlT9Ty6T1VmIbRDxaqS9hFiRNgFsf1T6q3oHUQNbHqQXMwsxA2kbUAKLDpP0H4Daf056mKVMAAAAASUVORK5CYII=",
   },

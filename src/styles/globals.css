@@ -186,7 +186,7 @@
 }
 
 .side {
-  @apply after:content-[''] after:block after:w-[1px] after:h-[90px] after:mx-auto after:bg-sky-500 after:dark:bg-slate-light
+  @apply after:content-[''] after:block after:w-[1px] after:h-[90px] after:mx-auto after:bg-slate
 }
 
 .section-header::after {
