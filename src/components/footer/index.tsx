@@ -1,5 +1,8 @@
+import Image from "next/image";
 import { DEV_NAME, GIT_REPO } from "@/utils/data";
 import { StarIcon } from "@heroicons/react/outline";
+import { useTheme } from "next-themes";
+import { Theme } from "@/utils/constants";
 
 interface IProps {
   gitStats: {
@@ -10,9 +13,11 @@ interface IProps {
 }
 
 const Footer: React.FC<IProps> = ({ gitStats }) => {
+  const { theme } = useTheme();
+
   return (
     <footer className="flex flex-col h-auto min-h-[70px] p-4 text-center">
-      <div className="text-slate-500 dark:text-slate-light font-mono text-xs">
+      <div className="text-sky-500 dark:text-green font-mono text-xs">
         <a href={GIT_REPO} className="p-[10px]">
           <div>
             Built by&nbsp;
@@ -22,12 +27,20 @@ const Footer: React.FC<IProps> = ({ gitStats }) => {
           </div>
 
           <div className="mt-[10px]">
-            <span className="inline-flex items-center px-2">
-              <StarIcon className="h-3 w-3 inline-flex mr-1" />
+            <span className="inline-flex items-center px-2 space-x-1">
+              <StarIcon className="h-3 w-3 inline-flex" />
               <span>{gitStats.stars}</span>
             </span>
-            <span className="inline-flex items-center px-2">
-              <StarIcon className="h-3 w-3 inline-flex" />
+            <span className="inline-flex items-center px-2 space-x-1">
+              <Image
+                src={`/images/social/icons8-git-merge-${
+                  theme === Theme.DARK ? "green" : "blue"
+                }.png`}
+                width={12}
+                height={12}
+                alt=""
+                className="inline-flex"
+              />
               <span>{gitStats.forks}</span>
             </span>
           </div>
