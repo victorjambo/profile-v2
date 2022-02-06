@@ -146,27 +146,42 @@ export const projects = [
 
 export const social = [
   {
-    icon: "/images/social/icons8-github.svg",
+    icons: {
+      blue: "/images/social/icons8-github-blue.svg",
+      green: "/images/social/icons8-github-green.svg",
+    },
     name: "github",
     link: "https://github.com/victorjambo",
   },
   {
-    icon: "/images/social/icons8-twitter.svg",
+    icons: {
+      blue: "/images/social/icons8-twitter-blue.svg",
+      green: "/images/social/icons8-twitter-green.svg",
+    },
     name: "twitter",
     link: "https://twitter.com/victor_jambo",
   },
   {
-    icon: "/images/social/icons8-linkedin.svg",
+    icons: {
+      blue: "/images/social/icons8-linkedin-blue.svg",
+      green: "/images/social/icons8-linkedin-green.svg",
+    },
     name: "linkedin",
     link: "https://www.linkedin.com/in/mutaivictor",
   },
   {
-    icon: "/images/social/icons8-stack-overflow.svg",
+    icons: {
+      blue: "/images/social/icons8-stack-overflow-blue.svg",
+      green: "/images/social/icons8-stack-overflow-green.svg",
+    },
     name: "stack overflow",
     link: "https://stackoverflow.com/users/7770278/victor-mutai/",
   },
   {
-    icon: "/images/social/icons8-medium.svg",
+    icons: {
+      blue: "/images/social/icons8-medium-blue.svg",
+      green: "/images/social/icons8-medium-green.svg",
+    },
     name: "medium",
     link: "https://victorjambo.medium.com/",
   },

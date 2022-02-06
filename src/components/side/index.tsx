@@ -1,7 +1,11 @@
 import Image from "next/image";
 import { DEV_EMAIL, social } from "@/utils/data";
+import { useTheme } from "next-themes";
+import { Theme } from "@/utils/constants";
 
 const Side: React.FC = () => {
+  const { theme } = useTheme();
+
   return (
     <>
       <MainComponent orientation="left-10">
@@ -13,13 +17,18 @@ const Side: React.FC = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src={item.icon} width={21} height={21} alt={item.name} />
+              <Image
+                src={theme === Theme.DARK ? item.icons.green : item.icons.blue}
+                width={21}
+                height={21}
+                alt={item.name}
+              />
             </a>
           ))}
         </div>
       </MainComponent>
       <MainComponent orientation="right-10">
-        <div className="flex flex-col items-center relative side hover:text-sky-500 dark:hover:text-green">
+        <div className="flex flex-col items-center relative side text-sky-500 dark:text-green">
           <a className="my-5 p-[10px] font-mono text-xs tracking-widest [writing-mode:vertical-rl] cursor-pointer">
             {DEV_EMAIL}
           </a>
@@ -36,9 +45,7 @@ const MainComponent: React.FC<{ orientation: string }> = ({
   orientation,
 }) => {
   return (
-    <div
-      className={`fixed bottom-0 z-10 text-slate ${orientation}`}
-    >
+    <div className={`fixed bottom-0 z-10 text-slate ${orientation}`}>
       {children}
     </div>
   );
