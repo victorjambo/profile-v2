@@ -7,7 +7,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Header />
-      <ThemeProvider defaultTheme="system" attribute="class" storageKey="theme">
+      <ThemeProvider defaultTheme="dark" attribute="class" storageKey="theme">
         <Component {...pageProps} />
       </ThemeProvider>
     </>
