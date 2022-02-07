@@ -1,8 +1,12 @@
+import { useScrollControl } from "@/context/scrollControl";
 import { DEV_EMAIL } from "@/utils/data";
 
 const ContactSection: React.FC = () => {
+  const { refs } = useScrollControl();
+
   return (
     <section
+      ref={refs?.Contact}
       id="contact"
       className="max-w-[600px] mx-auto mb-[100px] py-[100px] text-center"
     >

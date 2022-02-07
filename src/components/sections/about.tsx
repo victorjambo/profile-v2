@@ -1,10 +1,13 @@
 import { SectionHeader } from "@/components/sections";
+import { useScrollControl } from "@/context/scrollControl";
 import { aboutMe, technologies } from "@/utils/data";
 import Image from "next/image";
 
 const AboutSection: React.FC = () => {
+  const { refs } = useScrollControl();
+  
   return (
-    <section id="about" className="max-w-[900px] mx-auto">
+    <section ref={refs?.About} id="about" className="max-w-[900px] mx-auto">
       <SectionHeader idx="01." title="About me" />
       <div className="grid gap-[50px] grid-inner text-slate-600 dark:text-slate font-sans">
         <div className="space-y-3">

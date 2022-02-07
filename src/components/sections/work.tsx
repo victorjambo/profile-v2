@@ -1,11 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
+import { useScrollControl } from "@/context/scrollControl";
 import { projects } from "@/utils/data";
 import { ExternalLinkIcon, ShareIcon } from "@heroicons/react/outline";
 import { SectionHeader } from ".";
 
 const WorkSection: React.FC = () => {
+  const { refs } = useScrollControl();
+
   return (
-    <section id="work" className="max-w-[1000px] mx-auto py-[100px]">
+    <section
+      ref={refs?.Work}
+      id="work"
+      className="max-w-[1000px] mx-auto py-[100px]"
+    >
       <SectionHeader idx="03." title="Some Things I've Built" />
 
       <ul className="font-sans space-y-[100px]">

@@ -3,10 +3,17 @@ import { SectionHeader } from ".";
 import { Tab } from "@headlessui/react";
 import { classNames } from "@/utils/classNames";
 import { companies } from "@/utils/data";
+import { useScrollControl } from "@/context/scrollControl";
 
 const ExperienceSection: React.FC = () => {
+  const { refs } = useScrollControl();
+
   return (
-    <section id="experience" className="max-w-[700px] mx-auto py-[100px]">
+    <section
+      ref={refs?.Experience}
+      id="experience"
+      className="max-w-[700px] mx-auto py-[100px]"
+    >
       <SectionHeader idx="02." title="Where I've Worked" />
 
       <Tab.Group>

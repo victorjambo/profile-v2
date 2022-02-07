@@ -4,6 +4,7 @@ import { classNames } from "@/utils/classNames";
 import ThemeDropdown from "./themeDropdown";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { useScrollControl } from "@/context/scrollControl";
 
 const navigation = [
   { id: "01", name: "About", href: "#about", current: false },
@@ -12,10 +13,22 @@ const navigation = [
   { id: "04", name: "Contact", href: "#contact", current: false },
 ];
 
+const defaultCurrentSection = {
+  About: false,
+  Experience: false,
+  Work: false,
+  Contact: false,
+};
+
 const Navbar = () => {
   const [scrollTop, setScrollTop] = useState(0);
+  const [currentSection, setCurrentSection] = useState<Record<string, boolean>>(
+    defaultCurrentSection
+  );
 
   const navRef = useRef(null);
+
+  const { scrollInto, refs } = useScrollControl();
 
   useEffect(() => {
     const onScroll = (e: any) => {
@@ -25,6 +38,33 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const handleScroll = (name: string) => {
+    let currentRef;
+    switch (name) {
+      case "About":
+        currentRef = refs?.About;
+        setCurrentSection({ ...defaultCurrentSection, About: true });
+        break;
+      case "Contact":
+        currentRef = refs?.Contact;
+        setCurrentSection({ ...defaultCurrentSection, Contact: true });
+        break;
+      case "Experience":
+        currentRef = refs?.Experience;
+        setCurrentSection({ ...defaultCurrentSection, Experience: true });
+        break;
+      case "Work":
+        currentRef = refs?.Work;
+        setCurrentSection({ ...defaultCurrentSection, Work: true });
+        break;
+      default:
+        break;
+    }
+    if (scrollInto) {
+      scrollInto(currentRef);
+    }
+  };
 
   return (
     <Disclosure as="nav">
@@ -72,10 +112,12 @@ const Navbar = () => {
                       {navigation.map((item) => (
                         <a
                           key={item.name}
-                          href={item.href}
+                          onClick={() => handleScroll(item.name)}
                           className={classNames(
-                            item.current ? "text-sky-500 dark:text-green" : "",
-                            "px-3 py-2 text-xs hover:text-sky-500 dark:hover:text-green"
+                            currentSection[item.name]
+                              ? "text-sky-500 dark:text-green"
+                              : "",
+                            "px-3 py-2 text-xs hover:text-sky-500 dark:hover:text-green cursor-pointer"
                           )}
                           aria-current={item.current ? "page" : undefined}
                         >
