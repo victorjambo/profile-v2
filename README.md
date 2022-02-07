@@ -2,3 +2,15 @@
 
 ### Profile
 start app `yarn dev`
+
+### TODO
+[] Featured projects
+[] Screenshots for meta seo and github
+[] Transition effect to zoom in on hover on "VM" icon, side icons & email
+[] style this with diffent colors "products at @SyndicateDao"
+[] update the words "products at @SyndicateDao"
+[] netlify domain change
+[] google analytics https://mariestarck.com/add-google-analytics-to-your-next-js-application-in-5-easy-steps/
+[] try hotjar https://www.hotjar.com/pricing/
+[] storybooks
+[] Tests
