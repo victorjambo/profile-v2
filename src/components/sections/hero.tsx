@@ -14,13 +14,25 @@ const HeroSection: React.FC = () => {
           I build things for web3.
         </div>
         <p className="mt-5 max-w-lg font-sans text-slate-600 dark:text-slate leading-[24px]">
-          I&apos;m a software engineer specializing in building (and
-          occasionally designing) exceptional digital experiences. Currently,
-          I&apos;m focused on building accessible, human-centered products at
-          @SyndicateDao
+          Currently working on web3 at&nbsp;
+          <a
+            href="https://twitter.com/SyndicateDAO"
+            className="text-sky-50 dark:text-green cursor-pointer"
+            target="_blank"
+            rel="noreferrer"
+          >
+            ✺SyndicateDAO
+          </a>
+          &nbsp;We empower communities to collectively invest capital, for a
+          future that&apos;s more open, free, and fair.
         </p>
         <div className="mt-[50px]">
-          <a href="https://resume.github.io/?victorjambo" target="_blank" className="text-sky-500 dark:text-green hover:bg-sky-50 dark:hover:bg-green-tint border border-sky-500 dark:border-green rounded py-5 px-7 text-sm cursor-pointer" rel="noreferrer">
+          <a
+            href="https://resume.github.io/?victorjambo"
+            target="_blank"
+            className="text-sky-500 dark:text-green hover:bg-sky-50 dark:hover:bg-green-tint border border-sky-500 dark:border-green rounded py-5 px-7 text-sm cursor-pointer"
+            rel="noreferrer"
+          >
             Github Resume!
           </a>
         </div>
