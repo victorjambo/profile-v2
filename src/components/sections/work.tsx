@@ -1,11 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import { useScrollControl } from "@/context/scrollControl";
+import { Theme } from "@/utils/constants";
 import { projects } from "@/utils/data";
 import { ExternalLinkIcon, ShareIcon } from "@heroicons/react/outline";
+import { useTheme } from "next-themes";
+import Image from "next/image";
 import { SectionHeader } from ".";
 
 const WorkSection: React.FC = () => {
   const { refs } = useScrollControl();
+  const { theme } = useTheme();
 
   return (
     <section
@@ -32,7 +36,7 @@ const WorkSection: React.FC = () => {
                 </h3>
 
                 <div className="text-slate-light p-[25px] rounded bg-blue-navy-light project-description-shadow">
-                  <p>{project.body}</p>
+                  <p dangerouslySetInnerHTML={{ __html: project.body }} />
                 </div>
 
                 <ul className="flex flex-wrap mt-[25px] mb-[10px] font-mono text-slate-500 dark:text-slate-light text-xs">
@@ -51,8 +55,15 @@ const WorkSection: React.FC = () => {
                     </a>
                   )}
                   {project.git && (
-                    <a href={project.git} className="p-[10px]">
-                      <ShareIcon className="w-5 h-5" />
+                    <a href={project.git} className="p-[10px] zoom-hover-top">
+                      <Image
+                        src={`/images/social/icons8-github-${
+                          theme === Theme.DARK ? "green" : "blue"
+                        }.svg`}
+                        width={20}
+                        height={20}
+                        alt="git"
+                      />
                     </a>
                   )}
                   {project.share && (
