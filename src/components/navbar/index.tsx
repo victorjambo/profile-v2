@@ -7,10 +7,10 @@ import Link from "next/link";
 import { useScrollControl } from "@/context/scrollControl";
 
 const navigation = [
-  { id: "01", name: "About", href: "#about", current: false },
-  { id: "02", name: "Experience", href: "#experience", current: false },
-  { id: "03", name: "Work", href: "#work", current: false },
-  { id: "04", name: "Contact", href: "#contact", current: false },
+  { id: "01", name: "About" },
+  { id: "02", name: "Experience" },
+  { id: "03", name: "Work" },
+  { id: "04", name: "Contact" },
 ];
 
 const defaultCurrentSection = {
@@ -98,7 +98,7 @@ const Navbar = () => {
                 <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex-shrink-0 flex items-center">
                     <Link href="/" passHref>
-                      <div className="flex flex-row text-3xl text-sky-500 dark:text-green cursor-pointer">
+                      <div className="flex flex-row zoom-hover-center text-3xl text-sky-500 dark:text-green cursor-pointer">
                         <span>&#123;</span>
                         <span className="text-2xl pt-1">VM</span>
                         <span>&#125;</span>
@@ -117,9 +117,8 @@ const Navbar = () => {
                             currentSection[item.name]
                               ? "text-sky-500 dark:text-green"
                               : "",
-                            "px-3 py-2 text-xs hover:text-sky-500 dark:hover:text-green cursor-pointer"
+                            "zoom-hover-top px-3 py-2 text-xs hover:text-sky-500 dark:hover:text-green cursor-pointer"
                           )}
-                          aria-current={item.current ? "page" : undefined}
                         >
                           <span className="text-sky-500 dark:text-green pr-1">
                             {item.id}.
@@ -141,14 +140,12 @@ const Navbar = () => {
                 <Disclosure.Button
                   key={item.name}
                   as="a"
-                  href={item.href}
                   className={classNames(
-                    item.current
+                    currentSection[item.name]
                       ? "bg-gray-900 text-white"
                       : "text-gray-300 hover:bg-gray-700 hover:text-white",
                     "block px-3 py-2 rounded-md text-base font-medium"
                   )}
-                  aria-current={item.current ? "page" : undefined}
                 >
                   <span className="text-green pr-1">{item.id}.</span>
                   <span>{item.name}</span>

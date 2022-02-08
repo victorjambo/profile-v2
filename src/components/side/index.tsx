@@ -16,6 +16,7 @@ const Side: React.FC = () => {
               href={item.link}
               target="_blank"
               rel="noreferrer"
+              className="zoom-hover-top"
             >
               <Image
                 src={theme === Theme.DARK ? item.icons.green : item.icons.blue}
@@ -29,7 +30,7 @@ const Side: React.FC = () => {
       </MainComponent>
       <MainComponent orientation="right-10">
         <div className="flex flex-col items-center relative side text-sky-500 dark:text-green">
-          <a className="my-5 p-[10px] font-mono text-xs tracking-widest [writing-mode:vertical-rl] cursor-pointer">
+          <a className="my-5 p-[10px] font-mono text-xs tracking-widest [writing-mode:vertical-rl] cursor-pointer zoom-hover-center">
             {DEV_EMAIL}
           </a>
         </div>

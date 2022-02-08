@@ -263,3 +263,11 @@
 .idea:nth-of-type(odd) .project-content ul {
   justify-content: flex-end;
 }
+
+.zoom-hover-center {
+  @apply transition ease-in-out delay-150 hover:translate-y-0 hover:scale-110 duration-300
+}
+
+.zoom-hover-top {
+  @apply transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
+}
