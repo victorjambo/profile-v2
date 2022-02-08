@@ -33,7 +33,7 @@ const ThemeDropdown: React.FC = () => {
       <div>
         <Menu.Button className="flex text-sm rounded-full">
           <span className="sr-only">Theme</span>
-          <Icon className="h-5 w-5 hover:text-sky-500 dark:hover:text-green" />
+          <Icon className="h-5 w-5 text-sky-500 dark:text-green zoom-hover-center-lg" />
         </Menu.Button>
       </div>
       <Transition
