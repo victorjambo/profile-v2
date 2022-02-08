@@ -1,9 +1,8 @@
 const SEO: React.FC = () => {
-  const image = "/images/social/logoBanner.png";
-
   const title = "Victor Mutai";
   const description = "Victor Mutai Software Engineer";
   const twitter = "victor_jambo";
+  const image = "/images/banner.png";
 
   return (
     <>

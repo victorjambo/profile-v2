@@ -1,0 +1,15 @@
+I am a senior Web & Blockchain developer who has rich experience in blockchain.
+I've been working as a smart contract developer for over 3 years. I write in Solidity, use standard OpenZeppelin templates, and Truffle/Waffle/Hardhat for testing.
+Unit-test coverage of my contracts is always 100%. My contracts have been successfully externally audited by other companies.
+I have experience in deploying contracts in Ethereum.
+
+My Blockchain Skills include:
+======================
+- Smart Contract Development
+- Smart Contract Audit
+- ICO and Token Implementation
+- ERC20 and ERC721 Token Standards
+- Smart Contract Consulting
+- General Smart Contract Implementation
+- Consulting in the area of Ethereum Blockchain
+- Project and Product Management
