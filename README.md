@@ -11,7 +11,7 @@ start app `yarn dev`
 [x] update the words "products at @SyndicateDao"
 [] netlify domain change
 [] google analytics https://mariestarck.com/add-google-analytics-to-your-next-js-application-in-5-easy-steps/
-[] try hotjar https://www.hotjar.com/pricing/
+[x] try hotjar https://www.hotjar.com/pricing/
 [] storybooks
 [] Tests
 [] Mobile

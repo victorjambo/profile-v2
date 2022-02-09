@@ -7,7 +7,7 @@ const Side: React.FC = () => {
   const { theme } = useTheme();
 
   return (
-    <>
+    <div className="hidden md:block">
       <MainComponent orientation="left-10">
         <div className="flex flex-col space-y-2 items-center relative side">
           {social.map((item) => (
@@ -35,7 +35,7 @@ const Side: React.FC = () => {
           </a>
         </div>
       </MainComponent>
-    </>
+    </div>
   );
 };
 

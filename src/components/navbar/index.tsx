@@ -5,6 +5,7 @@ import ThemeDropdown from "./themeDropdown";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useScrollControl } from "@/context/scrollControl";
+import { useDeviceDetect } from "@/context/deviceDetect";
 
 const navigation = [
   { id: "01", name: "About" },
@@ -29,6 +30,8 @@ const Navbar = () => {
   const navRef = useRef(null);
 
   const { scrollInto, refs } = useScrollControl();
+
+  const { isMobile } = useDeviceDetect();
 
   useEffect(() => {
     const onScroll = (e: any) => {
@@ -73,14 +76,20 @@ const Navbar = () => {
           <div
             ref={navRef}
             className={classNames(
-              "h-[100px]",
-              scrollTop === 0
-                ? ""
-                : "fixed inset-0 z-30 shadow shadow-sky-100 bg-sky-50 dark:shadow-slate-700 dark:bg-slate-800 bg-opacity-95 dark:bg-opacity-95"
+              isMobile
+                ? "fixed inset-0 z-30 bg-white dark:bg-slate-900 h-16"
+                : scrollTop === 0
+                ? "h-[100px]"
+                : "h-[100px] fixed inset-0 z-30 shadow shadow-sky-100 bg-sky-50 dark:shadow-slate-700 dark:bg-slate-800 bg-opacity-95 dark:bg-opacity-95"
             )}
           >
             <div className="container mx-auto px-2 sm:px-6 lg:px-8">
-              <div className="relative flex items-center justify-between h-[100px]">
+              <div
+                className={classNames(
+                  "relative flex items-center justify-between",
+                  isMobile ? "h-16" : "h-[100px]"
+                )}
+              >
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
                   <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">

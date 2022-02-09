@@ -9,7 +9,7 @@ import ContactSection from "@/components/sections/contact";
 import ExperienceSection from "@/components/sections/experience";
 import WorkSection from "@/components/sections/work";
 
-interface IProps {
+interface IHomeProps {
   gitStats: {
     stars: number;
     forks: number;
@@ -17,7 +17,7 @@ interface IProps {
   };
 }
 
-const Home: NextPage<IProps> = ({ gitStats }) => {
+const Home: NextPage<IHomeProps> = ({ gitStats }) => {
   const { theme } = useTheme();
 
   return (
@@ -25,7 +25,7 @@ const Home: NextPage<IProps> = ({ gitStats }) => {
       <Navbar />
       <Side />
 
-      <div className={`${theme}  mx-auto px-[150px]`}>
+      <div className={`${theme}  mx-auto px-[6%] md:px-[150px]`}>
         <main className="h-full">
           <HeroSection />
           <AboutSection />
@@ -39,14 +39,15 @@ const Home: NextPage<IProps> = ({ gitStats }) => {
   );
 };
 
-Home.getInitialProps = async () => {
+Home.getInitialProps = async ({ req }: any) => {
   const gitStats = await fetch(
     "https://api.github.com/repos/victorjambo/profile-v2"
   )
     .then((res) => res.json())
     .then((res) => ({ stars: res.stargazers_count, forks: res.forks_count }))
     .catch(() => ({ stars: 0, forks: 0, error: true }));
-  return { gitStats };
+  const userAgent = req ? req.headers['user-agent'] : navigator.userAgent;
+  return { gitStats, userAgent };
 };
 
 export default Home;
