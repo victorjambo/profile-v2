@@ -19,7 +19,7 @@ export const aboutMe = [
 export const DEV_NAME = "Victor Mutai";
 export const DEV_ROLE = "Web3 Software Engineer";
 export const DEV_EMAIL = "victormutaijambo+dev@gmail.com";
-export const GIT_REPO = "https://github.com/victorjambo/profile-v4";
+export const GIT_REPO = "https://github.com/victorjambo/profile-v2";
 
 export const companies = [
   {
@@ -124,11 +124,11 @@ export const projects = [
   },
   {
     name: "Profile v1",
-    link: "https://mutai.dev",
+    link: "https://personal-resume-f81c4.web.app/",
     technologies: ["React", "Firebase", "Redux"],
     body: `Personal Profile V1`,
-    learnMore: "https://mutai.dev",
-    git: "https://github.com/victorjambo/profile-v4",
+    learnMore: "https://personal-resume-f81c4.web.app/",
+    git: "https://github.com/victorjambo/personal-resume",
     share: "",
     image: "/images/banners/profile-v1.png",
   },
