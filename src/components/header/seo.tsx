@@ -18,7 +18,42 @@ const SEO: React.FC = () => {
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image0" content={image} />
+
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-touch-fullscreen" content="yes" />
+      <meta name="apple-mobile-web-app-title" content="Syndicate" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+      <meta name="theme-color" content="#000" />
+
       <link rel="manifest" href="/manifest.json" />
+
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/images/icons/apple-icon-180x180.png"
+      />
+      <link
+        rel="apple-touch-icon"
+        sizes="192x192"
+        href="/images/icons/apple-icon-192x192.png"
+      />
+      <link
+        rel="apple-touch-icon"
+        sizes="512x512"
+        href="/images/icons/apple-icon-512x512.png"
+      />
+
+      <link
+        rel="apple-touch-startup-image"
+        media="(orientation: portrait)"
+        href="/images/icons/apple-splash-1125-2436.png"
+      />
+      <link
+        rel="apple-touch-startup-image"
+        media="(orientation: landscape)"
+        href="/images/icons/apple-splash-2436-1125.png"
+      />
     </>
   );
 };
