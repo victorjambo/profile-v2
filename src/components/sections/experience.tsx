@@ -17,14 +17,14 @@ const ExperienceSection: React.FC = () => {
       <SectionHeader idx="02." title="Where I've Worked" />
 
       <Tab.Group>
-        <div className="min-h-[340px] flex flex-row text-slate-800 dark:text-slate-light">
-          <Tab.List className="flex flex-col w-max">
+        <div className="min-h-[340px] flex flex-col md:flex-row text-slate-800 dark:text-slate-light">
+          <Tab.List className="flex flex-row md:flex-col w-full md:w-max overflow-scroll">
             {companies.map((company) => (
               <Tab
                 key={company.name}
                 className={({ selected }) =>
                   classNames(
-                    "flex items-center h-[42px] px-5 pb-[2px] border-l-2 cursor-pointer font-mono text-[13px] text-left whitespace-nowrap hover:bg-gray-100 dark:hover:bg-blue-navy-light",
+                    "flex items-center h-[42px] px-5 pb-[2px] border-b-2 md:border-l-2 cursor-pointer font-mono text-[13px] text-left whitespace-nowrap hover:bg-gray-100 dark:hover:bg-blue-navy-light",
                     selected
                       ? "border-sky-500 dark:border-green text-sky-500 dark:text-green"
                       : "border-slate-300 dark:border-blue-navy-lightest"
@@ -35,7 +35,7 @@ const ExperienceSection: React.FC = () => {
               </Tab>
             ))}
           </Tab.List>
-          <Tab.Panels className="ml-5 font-sans">
+          <Tab.Panels className="mt-5 md:ml-5 font-sans">
             {companies.map((company) => (
               <Tab.Panel
                 key={company.name}
