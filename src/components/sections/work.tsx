@@ -74,7 +74,7 @@ const WorkSection: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="project-image">
+            <div className="project-image opacity-5 md:opacity-100">
               <a href={project.link}>
                 <img
                   src={project.image}

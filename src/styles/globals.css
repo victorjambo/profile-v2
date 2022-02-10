@@ -186,7 +186,7 @@
 }
 
 .side {
-  @apply after:content-[''] after:block after:w-[1px] after:h-[90px] after:mx-auto after:bg-slate
+  @apply after:content-[''] after:block after:w-[1px] after:h-[90px] after:mx-auto after:bg-slate;
 }
 
 .section-header::after {
@@ -218,6 +218,12 @@
 
 .grid-col-featured {
   grid-template-columns: repeat(12, 1fr);
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-col-featured {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .project-description-shadow {
@@ -265,13 +271,13 @@
 }
 
 .zoom-hover-center {
-  @apply transition ease-in-out delay-150 hover:translate-y-0 hover:scale-110 duration-300
+  @apply transition ease-in-out delay-150 hover:translate-y-0 hover:scale-110 duration-300;
 }
 
 .zoom-hover-center-lg {
-  @apply transition ease-in-out delay-150 hover:translate-y-0 hover:scale-125 duration-300
+  @apply transition ease-in-out delay-150 hover:translate-y-0 hover:scale-125 duration-300;
 }
 
 .zoom-hover-top {
-  @apply transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
+  @apply transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300;
 }
