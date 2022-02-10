@@ -13,11 +13,14 @@ const DeviceDetectProvider: React.FC<{ userAgent: string }> = ({
   children,
   userAgent,
 }) => {
-  const isMobile = Boolean(
-    userAgent.match(
-      /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
-    )
-  );
+  let isMobile = false;
+  if (userAgent) {
+    isMobile = Boolean(
+      userAgent.match(
+        /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
+      )
+    );
+  }
 
   return (
     <DeviceDetectContext.Provider

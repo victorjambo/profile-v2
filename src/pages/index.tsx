@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import { useTheme } from "next-themes";
 import Navbar from "@/components/navbar";
 import Side from "@/components/side";
 import AboutSection from "@/components/sections/about";
@@ -18,14 +17,12 @@ interface IHomeProps {
 }
 
 const Home: NextPage<IHomeProps> = ({ gitStats }) => {
-  const { theme } = useTheme();
-
   return (
     <div>
       <Navbar />
       <Side />
 
-      <div className={`${theme}  mx-auto px-[6%] md:px-[150px]`}>
+      <div className="mx-auto px-[6%] md:px-[150px]">
         <main className="h-full">
           <HeroSection />
           <AboutSection />
@@ -46,7 +43,7 @@ Home.getInitialProps = async ({ req }: any) => {
     .then((res) => res.json())
     .then((res) => ({ stars: res.stargazers_count, forks: res.forks_count }))
     .catch(() => ({ stars: 0, forks: 0, error: true }));
-  const userAgent = req ? req.headers['user-agent'] : navigator.userAgent;
+  const userAgent = req ? req.headers["user-agent"] : navigator.userAgent;
   return { gitStats, userAgent };
 };
 
