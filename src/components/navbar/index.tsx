@@ -6,12 +6,20 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useScrollControl } from "@/context/scrollControl";
 import { useDeviceDetect } from "@/context/deviceDetect";
+import { useRouter } from "next/router";
 
-const navigation = [
+interface INav {
+  id: string;
+  name: string;
+  link?: string;
+}
+
+const navigation: INav[] = [
   { id: "01", name: "About" },
   { id: "02", name: "Experience" },
   { id: "03", name: "Work" },
   { id: "04", name: "Contact" },
+  { id: "05", name: "Blog", link: "/blog" },
 ];
 
 const defaultCurrentSection = {
@@ -21,7 +29,9 @@ const defaultCurrentSection = {
   Contact: false,
 };
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
+  const router = useRouter();
+
   const [scrollTop, setScrollTop] = useState(0);
   const [currentSection, setCurrentSection] = useState<Record<string, boolean>>(
     defaultCurrentSection
@@ -42,7 +52,17 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleScroll = (name: string) => {
+  const handleOnClick = (item: INav) => {
+    if (item.link) {
+      router.push(item.link);
+    } else if (router.pathname === "/blog") {
+      router.push("/");
+    } else {
+      scrollTo(item.name);
+    }
+  };
+
+  const scrollTo = (name: string) => {
     let currentRef;
     switch (name) {
       case "About":
@@ -121,7 +141,7 @@ const Navbar = () => {
                       {navigation.map((item) => (
                         <a
                           key={item.name}
-                          onClick={() => handleScroll(item.name)}
+                          onClick={() => handleOnClick(item)}
                           className={classNames(
                             currentSection[item.name]
                               ? "text-sky-500 dark:text-green"
