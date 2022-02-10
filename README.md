@@ -4,14 +4,14 @@
 start app `yarn dev`
 
 ### TODO
-[] Featured projects
-[x] Screenshots for meta seo and github
-[x] Transition effect to zoom in on hover on "VM" icon, side icons & email
-[x] style this with diffent colors "products at @SyndicateDao"
-[x] update the words "products at @SyndicateDao"
-[] netlify domain change
-[] google analytics https://mariestarck.com/add-google-analytics-to-your-next-js-application-in-5-easy-steps/
-[x] try hotjar https://www.hotjar.com/pricing/
-[] storybooks
-[] Tests
-[] Mobile
+- [x] Featured projects
+- [x] Screenshots for meta seo and github
+- [x] Transition effect to zoom in on hover on "VM" icon, side icons & email
+- [x] style this with diffent colors "products at @SyndicateDao"
+- [x] update the words "products at @SyndicateDao"
+- [x] Mobile
+- [x] try hotjar https://www.hotjar.com/pricing/
+- [] netlify domain change
+- [] google analytics https://mariestarck.com/add-google-analytics-to-your-next-js-application-in-5-easy-steps/
+- [] storybooks
+- [] Tests
