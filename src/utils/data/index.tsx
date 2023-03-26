@@ -6,6 +6,7 @@ export const technologies = [
   "Solidity",
   "NextJs",
   "Python",
+  "AngularJs"
 ];
 
 export const aboutMe = [
@@ -106,6 +107,22 @@ export const companies = [
 
 export const projects = [
   {
+    name: "Metamask Clone",
+    link: "https://lighthearted-starburst-103cb0.netlify.app/",
+    technologies: [
+      "React",
+      "Tailwind",
+      "NextJs",
+      "Typescript",
+    ],
+    body: ` <a href="https://portfolio.metamask.io/" class="text-sky-50 dark:text-green cursor-pointer" target="_blank" rel="noreferrer">Metamask Portfolio Clone</a>: helps you View and manage your entire Web3 portfolio.`,
+    learnMore: "https://lighthearted-starburst-103cb0.netlify.app/",
+    git: "https://github.com/victorjambo/metamask-portfolio",
+    share: "",
+    image: "/images/banners/meta.png",
+    wip: true
+  },
+  {
     name: "Tokenkid",
     link: "https://tokenkid.netlify.app/",
     technologies: [
@@ -126,7 +143,7 @@ export const projects = [
     name: "Profile v1",
     link: "https://personal-resume-f81c4.web.app/",
     technologies: ["React", "Firebase", "Redux"],
-    body: `Personal Profile V1`,
+    body: `This technical Portfolio website. Code is open source.`,
     learnMore: "https://personal-resume-f81c4.web.app/",
     git: "https://github.com/victorjambo/personal-resume",
     share: "",

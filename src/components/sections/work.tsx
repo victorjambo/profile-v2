@@ -32,7 +32,7 @@ const WorkSection: React.FC = () => {
                 </p>
 
                 <h3 className="mb-5 text-slate-500 dark:text-slate-lightest hover:text-sky-500 dark:hover:text-green featured-size font-semibold">
-                  <a href={project.link}>{project.name}</a>
+                  <a href={project.link} className="relative">{project.name}{project.wip && <span className="text-sky-50 dark:text-green text-xs absolute">(WIP)</span>}</a>
                 </h3>
 
                 <div className="text-slate-light p-[25px] rounded bg-blue-navy-light project-description-shadow">
