@@ -1,6 +1,7 @@
+"use client"
 import Image from "next/image";
 import { DEV_NAME, GIT_REPO, social } from "@/utils/data";
-import { StarIcon } from "@heroicons/react/outline";
+import { StarIcon } from "@heroicons/react/24/outline";
 import { useTheme } from "next-themes";
 import { Theme } from "@/utils/constants";
 
@@ -12,8 +13,13 @@ interface IProps {
   };
 }
 
-const Footer: React.FC<IProps> = ({ gitStats }) => {
+const Footer: React.FC = () => {
   const { theme } = useTheme();
+  const gitStats = {
+    stars: 0,
+    forks: 0,
+    error: false
+  }
 
   return (
     <footer className="flex flex-col h-auto min-h-[70px] text-center items-center">

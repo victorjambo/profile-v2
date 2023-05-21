@@ -1,12 +1,13 @@
+"use client"
 import { Disclosure } from "@headlessui/react";
-import { MenuAlt2Icon, XIcon } from "@heroicons/react/outline";
+import { Bars4Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { classNames } from "@/utils/classNames";
 import ThemeDropdown from "./themeDropdown";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useScrollControl } from "@/context/scrollControl";
 import { useDeviceDetect } from "@/context/deviceDetect";
-import { useRouter } from "next/router";
+import { useRouter, usePathname } from "next/navigation";
 
 interface INav {
   id: string;
@@ -31,6 +32,7 @@ const defaultCurrentSection = {
 
 const Navbar: React.FC = () => {
   const router = useRouter();
+  const pathname = usePathname();
 
   const [scrollTop, setScrollTop] = useState(0);
   const [currentSection, setCurrentSection] = useState<Record<string, boolean>>(
@@ -55,7 +57,7 @@ const Navbar: React.FC = () => {
   const handleOnClick = (item: INav) => {
     if (item.link) {
       router.push(item.link);
-    } else if (router.pathname === "/blog") {
+    } else if (pathname === "/blog") {
       router.push("/");
     } else {
       scrollTo(item.name);
@@ -115,9 +117,9 @@ const Navbar: React.FC = () => {
                   <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
-                      <XIcon className="block h-6 w-6" aria-hidden="true" />
+                      <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                     ) : (
-                      <MenuAlt2Icon
+                      <Bars4Icon
                         className="block h-6 w-6"
                         aria-hidden="true"
                       />

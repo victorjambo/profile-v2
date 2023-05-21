@@ -1,3 +1,4 @@
+"use client"
 import { SectionHeader } from "@/components/sections";
 import { useScrollControl } from "@/context/scrollControl";
 import { aboutMe, technologies } from "@/utils/data";

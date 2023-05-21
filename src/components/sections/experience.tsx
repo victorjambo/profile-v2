@@ -1,3 +1,4 @@
+"use client"
 import { SectionHeader } from ".";
 
 import { Tab } from "@headlessui/react";

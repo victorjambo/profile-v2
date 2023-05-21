@@ -1,11 +1,12 @@
+"use client"
 import { useTheme } from "next-themes";
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import {
-  DesktopComputerIcon,
+  ComputerDesktopIcon,
   MoonIcon,
   SunIcon,
-} from "@heroicons/react/outline";
+} from "@heroicons/react/24/outline";
 import { Theme } from "@/utils/constants";
 import { classNames } from "@/utils/classNames";
 
@@ -92,7 +93,7 @@ const ThemeDropdown: React.FC = () => {
                 )}
                 onClick={() => setTheme(Theme.SYSTEM)}
               >
-                <DesktopComputerIcon className="w-5 h-5" />
+                <ComputerDesktopIcon className="w-5 h-5" />
                 <span>System</span>
               </span>
             )}

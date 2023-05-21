@@ -1,3 +1,4 @@
+"use client"
 import { createContext, useContext } from "react";
 
 interface IDeviceDetectProps {
@@ -9,10 +10,10 @@ const DeviceDetectContext = createContext<Partial<IDeviceDetectProps>>({});
 export const useDeviceDetect = (): Partial<IDeviceDetectProps> =>
   useContext(DeviceDetectContext);
 
-const DeviceDetectProvider: React.FC<{ userAgent: string }> = ({
-  children,
-  userAgent,
-}) => {
+const DeviceDetectProvider: React.FC<{
+  userAgent: string;
+  children: React.ReactNode;
+}> = ({ children, userAgent }) => {
   let isMobile = false;
   if (userAgent) {
     isMobile = Boolean(

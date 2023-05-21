@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import { DEV_EMAIL, social } from "@/utils/data";
 import { useTheme } from "next-themes";
@@ -41,10 +42,10 @@ const Side: React.FC = () => {
 
 export default Side;
 
-const MainComponent: React.FC<{ orientation: string }> = ({
-  children,
-  orientation,
-}) => {
+const MainComponent: React.FC<{
+  orientation: string;
+  children: React.ReactNode;
+}> = ({ children, orientation }) => {
   return (
     <div className={`fixed bottom-0 z-10 text-slate ${orientation}`}>
       {children}
