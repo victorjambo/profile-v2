@@ -34,8 +34,9 @@ export const companies = [
       <li class="list">Develop smart contracts and integrate smart contracts to the web3 apps.</li>
       <li class="list">Integrate analytical and transactional information from The Graph.</li>
       <li class="list">Build components to manage wallet interactions.</li>
-      <li class="list">Write smart contracts tied to membership NFTs.</li>
       <li class="list">recruit / build a team of other web3 engineers to work with.</li>
+      <li class="list">Architected and implemented robust platforms for managing ERC-20 Tokens, NFTs, and Staking
+      Tokens, optimising security and user experience.</li>
       </ul>`,
   },
   {
@@ -130,14 +131,29 @@ export const projects = [
       "Tailwind",
       "NextJs",
       "Solidity",
-      "thegraph",
+      "subgraph",
       "Typescript",
     ],
-    body: `TokenKid is simple an NFT Marketplace built on <a href="https://celo.org/" class="text-sky-50 dark:text-green cursor-pointer" target="_blank" rel="noreferrer">Celo</a>`,
+    body: `TokenKid is multichain NFT Marketplace. Supports <a href="https://celo.org/" class="text-sky-50 dark:text-green cursor-pointer" target="_blank" rel="noreferrer">Celo</a> and <a href="https://celo.org/" class="text-sky-50 dark:text-green cursor-pointer" target="_blank" rel="noreferrer">Goerli Testnet</a>`,
     learnMore: "https://tokenkid.netlify.app/",
     git: "https://github.com/victorjambo/tokenkid",
     share: "",
     image: "/images/banners/tokenkid.png",
+  },
+  {
+    name: "Tokenkid",
+    link: "https://holdlit.getlit.wtf/",
+    technologies: [
+      "React",
+      "Tailwind",
+      "NextJs",
+      "Typescript",
+    ],
+    body: `Official staking site for <a href="https://coinmarketcap.com/currencies/lit/" class="text-sky-50 dark:text-green cursor-pointer" target="_blank" rel="noreferrer">LIT Coin</a>`,
+    learnMore: "https://holdlit.getlit.wtf/",
+    git: "",
+    share: "",
+    image: "/images/banners/lit-staking.png",
   },
   {
     name: "Profile v1",
