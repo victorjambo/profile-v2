@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Navbar from "@/components/navbar";
 import Side from "@/components/side";
 import AboutSection from "@/components/sections/about";
@@ -12,19 +12,29 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <React.Suspense>
+      <Suspense>
         <Side />
-      </React.Suspense>
+      </Suspense>
 
       <div className="mx-auto px-[6%] md:px-[150px]">
         <main className="h-full">
           <HeroSection />
-          <AboutSection />
-          <ExperienceSection />
-          <WorkSection />
-          <ContactSection />
+          <Suspense>
+            <AboutSection />
+          </Suspense>
+          <Suspense>
+            <ExperienceSection />
+          </Suspense>
+          <Suspense>
+            <WorkSection />
+          </Suspense>
+          <Suspense>
+            <ContactSection />
+          </Suspense>
         </main>
-        <Footer />
+        <Suspense>
+          <Footer />
+        </Suspense>
       </div>
     </div>
   );
