@@ -16,7 +16,7 @@ export default function RootLayout({
   const userAgent = headers().get("user-agent") ?? navigator.userAgent;
 
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth w-full box-border">
       <Header />
       <body className="bg-white dark:bg-slate-900 font-mono">
         <Providers userAgent={userAgent}>{children}</Providers>
