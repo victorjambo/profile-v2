@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "@/components/navbar";
 import Side from "@/components/side";
 import AboutSection from "@/components/sections/about";
@@ -11,7 +12,9 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <Side />
+      <React.Suspense>
+        <Side />
+      </React.Suspense>
 
       <div className="mx-auto px-[6%] md:px-[150px]">
         <main className="h-full">

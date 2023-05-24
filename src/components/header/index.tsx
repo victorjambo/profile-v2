@@ -1,16 +1,14 @@
-import Head from "next/head";
-import { DEV_NAME, DEV_ROLE } from "@/utils/data";
+/* eslint-disable @next/next/no-head-element */
 import FontLoader from "./fontLoader";
 import SEO from "./seo";
 
 const Header: React.FC = () => {
   return (
-    <Head>
-      <title>{DEV_NAME}</title>
-      <link rel="icon" href="/favicon.ico" />
+    <head>
       <SEO />
+      <link rel="icon" href="/favicon.ico" />
       <FontLoader />
-    </Head>
+    </head>
   );
 };
 

@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
             <span className="inline-flex items-center px-2 space-x-1">
               <Image
                 src={`/images/social/icons8-git-merge-${
-                  theme === Theme.DARK ? "green" : "blue"
+                  theme === Theme.LIGHT ? "blue" : "green"
                 }.png`}
                 width={12}
                 height={12}

@@ -6,7 +6,7 @@ export const technologies = [
   "Solidity",
   "NextJs",
   "Python",
-  "AngularJs"
+  "AngularJs",
 ];
 
 export const aboutMe = [
@@ -23,6 +23,17 @@ export const DEV_EMAIL = "victormutaijambo+dev@gmail.com";
 export const GIT_REPO = "https://github.com/victorjambo/profile-v2";
 
 export const companies = [
+  {
+    name: "IOTA Foundation",
+    role: "Senior Software Engineer",
+    duration: "June 2023 - Present",
+    link: "https://twitter.com/iota",
+    subtitle: "",
+    responsibilities: `<ul class="space-y-2">
+      <li class="list">Building decentralized distributed systems on <a href="https://wiki.iota.org/learn/about-iota/tangle" class="text-sky-50 dark:text-green cursor-pointer" target="_blank" rel="noreferrer">Tangle</a>.</li>
+      <li class="list">Collaborate with cross-functional teams to identify new opportunities for product and process improvement</li>
+      </ul>`,
+  },
   {
     name: "SyndicateDao",
     role: "Software Engineer",
@@ -110,18 +121,13 @@ export const projects = [
   {
     name: "Metamask Clone",
     link: "https://lighthearted-starburst-103cb0.netlify.app/",
-    technologies: [
-      "React",
-      "Tailwind",
-      "NextJs",
-      "Typescript",
-    ],
+    technologies: ["React", "Tailwind", "NextJs", "Typescript"],
     body: ` <a href="https://portfolio.metamask.io/" class="text-sky-50 dark:text-green cursor-pointer" target="_blank" rel="noreferrer">Metamask Portfolio Clone</a>: helps you View and manage your entire Web3 portfolio.`,
     learnMore: "https://lighthearted-starburst-103cb0.netlify.app/",
     git: "https://github.com/victorjambo/metamask-portfolio",
     share: "",
     image: "/images/banners/meta.png",
-    wip: true
+    wip: true,
   },
   {
     name: "Tokenkid",
@@ -143,12 +149,7 @@ export const projects = [
   {
     name: "Tokenkid",
     link: "https://holdlit.getlit.wtf/",
-    technologies: [
-      "React",
-      "Tailwind",
-      "NextJs",
-      "Typescript",
-    ],
+    technologies: ["React", "Tailwind", "NextJs", "Typescript"],
     body: `Official staking site for <a href="https://coinmarketcap.com/currencies/lit/" class="text-sky-50 dark:text-green cursor-pointer" target="_blank" rel="noreferrer">LIT Coin</a>`,
     learnMore: "https://holdlit.getlit.wtf/",
     git: "",

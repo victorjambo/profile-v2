@@ -16,15 +16,14 @@ const HeroSection: React.FC = () => {
         <p className="mt-5 max-w-lg font-sans text-slate-600 dark:text-slate leading-[24px]">
           Currently working on web3 at&nbsp;
           <a
-            href="https://twitter.com/SyndicateDAO"
+            href="https://twitter.com/iota"
             className="text-sky-50 dark:text-green cursor-pointer"
             target="_blank"
             rel="noreferrer"
           >
-            ✺SyndicateDAO
+            IOTA Foundation
           </a>
-          &nbsp;We empower communities to collectively invest capital, for a
-          future that&apos;s more open, free, and fair.
+          &nbsp;An open-source, scalable, feeless, green & permissionless distributed ledger.
         </p>
         <div className="mt-[50px]">
           <a

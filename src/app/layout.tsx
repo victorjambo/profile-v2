@@ -1,10 +1,11 @@
 import "./globals.css";
 import { headers } from "next/headers";
 import { Providers } from "./providers";
+import Header from "@/components/header";
 
 export const metadata = {
   title: "Victor Mutai",
-  description: "Software Engineer",
+  description: "Senior Software Engineer",
 };
 
 export default function RootLayout({
@@ -16,6 +17,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <Header />
       <body className="bg-white dark:bg-slate-900 font-mono">
         <Providers userAgent={userAgent}>{children}</Providers>
       </body>

@@ -59,7 +59,7 @@ const WorkSection: React.FC = () => {
                     <a href={project.git} className="p-[10px] zoom-hover-top">
                       <Image
                         src={`/images/social/icons8-github-${
-                          theme === Theme.DARK ? "green" : "blue"
+                          theme === Theme.LIGHT ? "blue" : "green"
                         }.svg`}
                         width={20}
                         height={20}
