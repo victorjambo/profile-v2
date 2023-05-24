@@ -1,6 +1,6 @@
 const SEO: React.FC = () => {
   const title = "Victor Mutai";
-  const description = "Victor Mutai Software Engineer";
+  const description = "Victor Mutai Senior Software Engineer";
   const twitter = "victor_jambo";
   const image = "/images/banner.png";
 
