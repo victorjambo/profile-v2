@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
             rel="noreferrer"
           >
             <Image
-              src={theme === Theme.DARK ? item.icons.green : item.icons.blue}
+              src={theme === Theme.LIGHT ? item.icons.blue : item.icons.green}
               width={30}
               height={30}
               alt={item.name}

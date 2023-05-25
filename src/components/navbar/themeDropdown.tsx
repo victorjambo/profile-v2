@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useTheme } from "next-themes";
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
@@ -69,9 +69,9 @@ const ThemeDropdown: React.FC = () => {
               <span
                 className={classNames(
                   active ? "bg-gray-100 dark:bg-slate-600/30" : "",
-                  theme === Theme.DARK
-                    ? "text-sky-500 dark:text-green"
-                    : "text-gray-700 dark:text-slate-300",
+                  theme === Theme.LIGHT
+                    ? "text-gray-700 dark:text-slate-300"
+                    : "text-sky-500 dark:text-green",
                   "px-4 py-2 text-sm flex flex-row space-x-2 cursor-pointer"
                 )}
                 onClick={() => setTheme(Theme.DARK)}
