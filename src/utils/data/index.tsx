@@ -10,11 +10,9 @@ export const technologies = [
 ];
 
 export const aboutMe = [
-  `Hello! I am a software engineer whose mission is to help companies
-    solve their complex problems in the simplest way possible in various 
-    business areas. I care about clean, robust code and use agile techniques 
-    to deliver tested and high-quality solutions. I enjoy venturing into the 
-    unknown and providing companies with the edge they need with software.`,
+  `Hello! I am a senior software engineer with expertise in ReactJS, and NodeJS.
+    Proven track record of delivering high-quality solutions to complex problems
+    across various industries, including finance.`,
 ];
 
 export const DEV_NAME = "Victor Mutai";
