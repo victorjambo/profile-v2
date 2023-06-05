@@ -1,4 +1,5 @@
 "use client"
+import { checkIfMobile } from "@/utils/userAgent";
 import { createContext, useContext } from "react";
 
 interface IDeviceDetectProps {
@@ -11,17 +12,9 @@ export const useDeviceDetect = (): Partial<IDeviceDetectProps> =>
   useContext(DeviceDetectContext);
 
 const DeviceDetectProvider: React.FC<{
-  userAgent: string;
   children: React.ReactNode;
-}> = ({ children, userAgent }) => {
-  let isMobile = false;
-  if (userAgent) {
-    isMobile = Boolean(
-      userAgent.match(
-        /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
-      )
-    );
-  }
+}> = ({ children }) => {
+  const isMobile = checkIfMobile();
 
   return (
     <DeviceDetectContext.Provider

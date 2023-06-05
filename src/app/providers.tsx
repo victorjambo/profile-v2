@@ -6,13 +6,11 @@ import { ThemeProvider } from "next-themes";
 
 export function Providers({
   children,
-  userAgent,
 }: {
   children: React.ReactNode;
-  userAgent: string;
 }) {
   return (
-    <DeviceDetectProvider userAgent={userAgent}>
+    <DeviceDetectProvider>
       <ScrollControlProvider>
         <ThemeProvider defaultTheme="dark" attribute="class" storageKey="theme">
           {children}

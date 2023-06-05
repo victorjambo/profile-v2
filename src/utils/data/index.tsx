@@ -147,7 +147,7 @@ export const projects = [
     image: "/images/banners/tokenkid.png",
   },
   {
-    name: "Tokenkid",
+    name: "Lit Staking",
     link: "https://holdlit.getlit.wtf/",
     technologies: ["React", "Tailwind", "NextJs", "Typescript"],
     body: `Official staking site for <a href="https://coinmarketcap.com/currencies/lit/" class="text-sky-50 dark:text-green cursor-pointer" target="_blank" rel="noreferrer">LIT Coin</a>`,
