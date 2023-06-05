@@ -20,7 +20,7 @@ export default function RootLayout({
       <Header />
       <body className="bg-white dark:bg-slate-900 font-mono">
         {/* <Providers userAgent={userAgent}>{children}</Providers> */}
-        <div>hello world</div>
+        <div>hello world{children}</div>
       </body>
     </html>
   );
