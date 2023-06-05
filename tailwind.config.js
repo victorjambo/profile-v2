@@ -6,6 +6,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        image: "3fr 2fr",
+      },
       fontFamily: {
         mono: ["SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "monospace"],
         sans: [

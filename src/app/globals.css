@@ -208,10 +208,6 @@
   font-size: clamp(16px, 3vw, 20px);
 }
 
-.grid-inner {
-  grid-template-columns: 3fr 2fr;
-}
-
 .title {
   font-size: clamp(40px, 5vw, 60px);
 }
