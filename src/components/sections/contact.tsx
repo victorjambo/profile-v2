@@ -1,3 +1,4 @@
+"use client"
 import { useScrollControl } from "@/context/scrollControl";
 import { DEV_EMAIL } from "@/utils/data";
 

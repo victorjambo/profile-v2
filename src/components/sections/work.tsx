@@ -1,8 +1,9 @@
+"use client"
 /* eslint-disable @next/next/no-img-element */
 import { useScrollControl } from "@/context/scrollControl";
 import { Theme } from "@/utils/constants";
 import { projects } from "@/utils/data";
-import { ExternalLinkIcon, ShareIcon } from "@heroicons/react/outline";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import { SectionHeader } from ".";
@@ -58,7 +59,7 @@ const WorkSection: React.FC = () => {
                     <a href={project.git} className="p-[10px] zoom-hover-top">
                       <Image
                         src={`/images/social/icons8-github-${
-                          theme === Theme.DARK ? "green" : "blue"
+                          theme === Theme.LIGHT ? "blue" : "green"
                         }.svg`}
                         width={20}
                         height={20}
@@ -67,8 +68,8 @@ const WorkSection: React.FC = () => {
                     </a>
                   )}
                   {project.share && (
-                    <a href={project.share} className="p-[10px]">
-                      <ExternalLinkIcon className="w-5 h-5" />
+                    <a href={project.share} className="p-[10px]" target="_blank" rel="noreferrer">
+                      <ArrowTopRightOnSquareIcon className="w-5 h-5" />
                     </a>
                   )}
                 </div>

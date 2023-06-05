@@ -1,3 +1,4 @@
+"use client"
 import { createContext, RefObject, useContext, useRef } from "react";
 
 type IRefs = {
@@ -17,7 +18,9 @@ const ScrollControlContext = createContext<Partial<IScrollControlProps>>({});
 export const useScrollControl = (): Partial<IScrollControlProps> =>
   useContext(ScrollControlContext);
 
-const ScrollControlProvider: React.FC = ({ children }) => {
+const ScrollControlProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   const aboutRef = useRef<HTMLElement>(null);
   const experienceRef = useRef<HTMLElement>(null);
   const workRef = useRef<HTMLElement>(null);

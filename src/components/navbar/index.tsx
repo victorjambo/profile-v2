@@ -1,12 +1,12 @@
+"use client";
 import { Disclosure } from "@headlessui/react";
-import { MenuAlt2Icon, XIcon } from "@heroicons/react/outline";
+import { Bars4Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { classNames } from "@/utils/classNames";
 import ThemeDropdown from "./themeDropdown";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useScrollControl } from "@/context/scrollControl";
-import { useDeviceDetect } from "@/context/deviceDetect";
-import { useRouter } from "next/router";
+import { useRouter, usePathname } from "next/navigation";
 
 interface INav {
   id: string;
@@ -31,6 +31,7 @@ const defaultCurrentSection = {
 
 const Navbar: React.FC = () => {
   const router = useRouter();
+  const pathname = usePathname();
 
   const [scrollTop, setScrollTop] = useState(0);
   const [currentSection, setCurrentSection] = useState<Record<string, boolean>>(
@@ -40,8 +41,6 @@ const Navbar: React.FC = () => {
   const navRef = useRef(null);
 
   const { scrollInto, refs } = useScrollControl();
-
-  const { isMobile } = useDeviceDetect();
 
   useEffect(() => {
     const onScroll = (e: any) => {
@@ -55,7 +54,7 @@ const Navbar: React.FC = () => {
   const handleOnClick = (item: INav) => {
     if (item.link) {
       router.push(item.link);
-    } else if (router.pathname === "/blog") {
+    } else if (pathname === "/blog") {
       router.push("/");
     } else {
       scrollTo(item.name);
@@ -96,31 +95,22 @@ const Navbar: React.FC = () => {
           <div
             ref={navRef}
             className={classNames(
-              isMobile
-                ? "fixed inset-0 z-30 bg-white dark:bg-slate-900 h-16"
-                : scrollTop === 0
-                ? "h-[100px]"
-                : "h-[100px] fixed inset-0 z-30 shadow shadow-sky-100 bg-sky-50 dark:shadow-slate-700 dark:bg-slate-800 bg-opacity-95 dark:bg-opacity-95"
+              "fixed inset-0 z-30  h-16 sm:h-[100px] shadow-sky-100 dark:shadow-slate-700 bg-opacity-95 dark:bg-opacity-95",
+              scrollTop === 0
+                ? ""
+                : "bg-white dark:bg-slate-900 sm:bg-sky-50 sm:dark:bg-slate-800 shadow"
             )}
           >
             <div className="container mx-auto px-2 sm:px-6 lg:px-8">
-              <div
-                className={classNames(
-                  "relative flex items-center justify-between",
-                  isMobile ? "h-16" : "h-[100px]"
-                )}
-              >
+              <div className="relative flex items-center justify-between h-16 sm:h-[100px]">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
                   <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
-                      <XIcon className="block h-6 w-6" aria-hidden="true" />
+                      <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                     ) : (
-                      <MenuAlt2Icon
-                        className="block h-6 w-6"
-                        aria-hidden="true"
-                      />
+                      <Bars4Icon className="block h-6 w-6" aria-hidden="true" />
                     )}
                   </Disclosure.Button>
                 </div>
@@ -164,7 +154,7 @@ const Navbar: React.FC = () => {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="px-2 pt-4 pb-3 space-y-1">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
