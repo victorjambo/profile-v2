@@ -33,10 +33,10 @@ export const companies = [
       </ul>`,
   },
   {
-    name: "SyndicateDao",
+    name: "Syndicate.io",
     role: "Software Engineer",
     duration: "May 2021 - Present",
-    link: "https://twitter.com/SyndicateDao",
+    link: "https://twitter.com/syndicateio",
     subtitle: "",
     responsibilities: `<ul class="space-y-2">
       <li class="list">Design, code, test and deploy smart contracts for Ethereum-based blockchains.</li>
